@@ -97,7 +97,7 @@ html_css_files = ["custom.css"]
 html_extra_path = ["_extra"]
 html_theme_options = {
     # Point these at your docs repository so the GitHub buttons work.
-    "repository_url": "https://github.com/your-org/project-docs",
+    "repository_url": "https://github.com/MultiRoofs/MultiRoofs_docs",
     "repository_branch": "main",
     "path_to_docs": "docs",
     "use_repository_button": True,

@@ -49,12 +49,12 @@ The two `--ignore` options are required: the build writes temporary files in
    git init -b main
    git add .
    git commit -m "Initial docs"
-   git remote add origin https://github.com/<you>/project-docs.git
+   git remote add origin https://github.com/MultiRoofs/MultiRoofs_docs.git
    git push -u origin main
    ```
 3. On GitHub: **Settings > Pages > Build and deployment > Source: GitHub Actions**.
 4. The `docs` workflow runs on every push to `main` (or **Actions > docs > Run workflow**).
-   The site is then at `https://<you>.github.io/project-docs/`.
+   The site is then at `https://multiroofs.github.io/MultiRoofs_docs/`.
 
 Also update `repository_url` in `docs/conf.py` so the GitHub buttons point to your repo.
 
@@ -68,12 +68,6 @@ The four sample tools each show one way of handling the reference:
 | `mapview` | TypeScript library | TypeDoc HTML pasted in `docs/_extra/reference/mapview/` |
 | `inventory-api` | Web service | Link to its published reference |
 | `numpy` | Third-party | Link to the official docs |
-
-When your real tools are in:
-
-1. Delete `sample-sources/`, the `[geokit]` entry in `docs/python-tools.toml`,
-   and `docs/_extra/reference/mapview/`.
-2. Delete the sample folders in `docs/tools/` and their entries and cards in `docs/index.md`.
 
 ## Layout
 
