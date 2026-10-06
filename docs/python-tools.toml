@@ -1,0 +1,24 @@
+# Python tools whose API reference is generated from source code.
+# Nothing is installed: the source is only read (static analysis by sphinx-autoapi).
+#
+# Each entry is one tool. The table name ([geokit]) becomes the folder name
+# under docs/api/ and must match the Python package name.
+#
+# Option A, the normal case: read the source from a GitHub repository.
+#   [tool-name]
+#   repo = "https://github.com/<org>/<repo>"
+#   ref  = "v1.4.0"            # tag or branch to read (for example "main")
+#   path = "src/tool_name"     # folder of the Python package inside the repo
+#
+# Option B: read the source from a folder on disk (used here for the demo).
+#   [tool-name]
+#   local = "../path/to/package"   # relative to the docs/ folder
+
+[geokit]
+local = "../sample-sources/geokit/src/geokit"
+
+# Example of option A (uncomment to try; it clones a small public library):
+# [itsdangerous]
+# repo = "https://github.com/pallets/itsdangerous"
+# ref  = "2.2.0"
+# path = "src/itsdangerous"

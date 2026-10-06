@@ -1,0 +1,28 @@
+# Copy this file into EACH TOOL REPOSITORY as .github/workflows/trigger-docs.yml
+# It asks the docs repository to rebuild when the tool is released.
+#
+# Setup in the tool repository:
+#   1. Create a fine-grained personal access token with access to the docs
+#      repository only, permission "Contents: Read and write".
+#   2. Tool repo > Settings > Secrets and variables > Actions > New secret
+#      Name: DOCS_DISPATCH_TOKEN, value: the token.
+#   3. Replace your-org/project-docs below.
+name: trigger-docs
+
+on:
+  release:
+    types: [published]
+  # Uncomment to rebuild the docs on every push to main instead:
+  # push:
+  #   branches: [main]
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: peter-evans/repository-dispatch@v4
+        with:
+          token: ${{ secrets.DOCS_DISPATCH_TOKEN }}
+          repository: your-org/project-docs
+          event-type: tool-updated
+          client-payload: '{"tool": "${{ github.repository }}", "ref": "${{ github.ref_name }}"}'

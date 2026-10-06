@@ -1,0 +1,9 @@
+# Sphinx and extensions only. No project tool is installed here:
+# Python references are read from source (see docs/python-tools.toml),
+# other references are linked or pasted as HTML.
+sphinx>=8.2,<10
+sphinx-book-theme>=1.1
+myst-nb>=1.1
+sphinx-design>=0.6
+sphinx-copybutton>=0.5
+sphinx-autoapi>=3.3

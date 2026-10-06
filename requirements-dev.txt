@@ -1,0 +1,4 @@
+# Local-only extras: live-reload preview and notebook editing.
+-r requirements-doc.txt
+sphinx-autobuild
+jupyterlab
