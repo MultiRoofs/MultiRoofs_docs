@@ -3,8 +3,7 @@
 This repository builds a single public documentation site for the MultiRoofs project. It 
 covers the project knowledge (concepts and background behind the project, such as 
 digital twins) and the documentation of every tool used in the project, both in-house 
-and third-party. Each tool section follows the
-same structure: **Tutorials**, **How-to guides**, **Explanation** and **Reference**.
+and third-party. Each tool section contains at least one these options: **Tutorials**, **How-to guides**, **Background** and **Reference**.
 Developers can contribute written pages as Markdown files or notebooks. API references 
 are either generated from the source code without installing anything (for Python 
 tools), linked to the tool's own published docs, or pasted as pre-built HTML when no 
