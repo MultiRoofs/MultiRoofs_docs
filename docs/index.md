@@ -17,39 +17,39 @@ Adding or updating a tool? See [Contributing to these docs](contributing/index.m
 ::::{grid} 1 2 2 2
 :gutter: 3
 
-:::{grid-item-card} UICityJSON
-:link: tools/geokit/index
+:::{grid-item-card} MultiRoofs Builder
+:link: tools/CityJSON/index
 :link-type: doc
 
-In-house Python library and guide to extract a 3D model of buildings given LiDAR cloud of points
+In-house Python library and user guide to extract a 3D model of buildings given LiDAR cloud of points
 and building footprints.
 +++
 {bdg-secondary}`Python, Roofer`
 :::
 
 :::{grid-item-card} MRIO
-:link: tools/mapview/index
+:link: tools/mrio/index
 :link-type: doc
 
-In-house TypeScript library. Draws building footprints on a web map.
+description
 +++
 {bdg-primary}`in-house` {bdg-secondary}`TypeScript` {bdg-light}`pasted reference`
 :::
 
 :::{grid-item-card} Roofy
-:link: tools/inventory-api/index
+:link: tools/roofy/index
 :link-type: doc
 
-In-house REST service. Stores and queries inventory items.
+description
 +++
 {bdg-primary}`in-house` {bdg-secondary}`web service` {bdg-light}`linked reference`
 :::
 
 :::{grid-item-card} Urban Challenge assessment
-:link: tools/numpy/index
+:link: tools/challenge_assessment/index
 :link-type: doc
 
-Third-party library. How the project uses it, with links to the official docs.
+description
 +++
 {bdg-warning}`third-party` {bdg-light}`linked reference`
 :::
@@ -66,9 +66,9 @@ getting-started/index
 :hidden:
 :caption: Tools
 
-tools/geokit/index
-tools/mapview/index
-tools/inventory-api/index
-tools/numpy/index
+tools/CityJSON/index
+tools/mrio/index
+tools/roofy/index
+tools/challenge_assessment/index
 contributing/index
 ```

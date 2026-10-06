@@ -1,4 +1,4 @@
-# Inventory API
+# Roofy
 
 The **Inventory API** is an in-house REST service that stores and queries inventory items.
 

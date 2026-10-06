@@ -14,9 +14,6 @@
 #   [tool-name]
 #   local = "../path/to/package"   # relative to the docs/ folder
 
-[geokit]
-local = "../sample-sources/geokit/src/geokit"
-
 # Example of option A (uncomment to try; it clones a small public library):
 # [itsdangerous]
 # repo = "https://github.com/pallets/itsdangerous"

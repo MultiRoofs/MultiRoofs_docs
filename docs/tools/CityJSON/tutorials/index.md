@@ -3,7 +3,9 @@
 Step-by-step lessons for newcomers.
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 2
 
-first-steps
+install-dependencies
+using-cli
+using-ui
 ```

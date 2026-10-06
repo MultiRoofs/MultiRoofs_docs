@@ -15,7 +15,6 @@ copyright = f"{date.today().year}, {author}"
 
 # -- General configuration ---------------------------------------------------
 extensions = [
-    "autoapi.extension",          # Python API reference from source, no install
     "sphinx.ext.napoleon",        # Google-style docstrings
     "sphinx.ext.intersphinx",
     "myst_nb",                    # Markdown (MyST) pages and notebooks
@@ -58,9 +57,14 @@ def _python_source_dirs() -> list[str]:
 
 
 autoapi_dirs = _python_source_dirs()
+if autoapi_dirs:
+    # Only load sphinx-autoapi when at least one Python tool is listed:
+    # it stops the build if autoapi_dirs is empty.
+    extensions.append("autoapi.extension")
 autoapi_root = "api"                   # pages are generated in docs/api/<package>/
 autoapi_add_toctree_entry = False      # each tool's reference page links to them
 autoapi_keep_files = False
+numfig = True
 autoapi_member_order = "bysource"
 autoapi_options = [
     "members", "undoc-members", "show-inheritance",

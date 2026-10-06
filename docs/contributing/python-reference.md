@@ -9,7 +9,6 @@ code by [sphinx-autoapi](https://sphinx-autoapi.readthedocs.io/).
 - Code that only works at runtime is not seen (for example functions created
   dynamically). Normal functions, classes, methods, constants and type hints work.
 
-Sample: the [geokit reference](../tools/geokit/reference/index.md).
 
 ## Step 1. Register the tool in `docs/python-tools.toml`
 

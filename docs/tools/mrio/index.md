@@ -1,4 +1,4 @@
-# mapview
+# MRIO
 
 **mapview** is an in-house TypeScript library that draws building footprints on a web map.
 

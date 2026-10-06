@@ -12,8 +12,6 @@ not run those generators. You choose one of two options:
 
 ## Option A. Link to published docs
 
-Sample: the [Inventory API reference](../tools/inventory-api/reference/index.md).
-
 Write `docs/tools/<your-tool>/reference/index.md` like this:
 
 ````markdown
@@ -45,8 +43,6 @@ add the site to `intersphinx_mapping` in `docs/conf.py`.
 ```
 
 ## Option B. Paste generated HTML
-
-Sample: the [mapview reference](../tools/mapview/reference/index.md), generated with TypeDoc.
 
 ### 1. Generate the HTML in your tool's repository
 

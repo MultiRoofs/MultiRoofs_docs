@@ -1,4 +1,4 @@
-# NumPy
+# Urban Challenges assessment
 
 NumPy is a **third-party** library. This section only covers how the project
 uses it. For everything else, see the [official NumPy documentation](https://numpy.org/doc/stable/).
