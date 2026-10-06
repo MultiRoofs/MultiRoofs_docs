@@ -1,4 +1,4 @@
-# project-docs
+# MultiRoofs tools documentation
 
 Documentation site for all project tools. Sphinx + sphinx-book-theme, MyST Markdown,
 Diátaxis structure, published to GitHub Pages by GitHub Actions.
