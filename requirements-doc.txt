@@ -7,3 +7,4 @@ myst-nb>=1.1
 sphinx-design>=0.6
 sphinx-copybutton>=0.5
 sphinx-autoapi>=3.3
+sphinx-last-updated-by-git

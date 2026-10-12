@@ -20,7 +20,16 @@ extensions = [
     "myst_nb",                    # Markdown (MyST) pages and notebooks
     "sphinx_design",
     "sphinx_copybutton",
+    "sphinx_last_updated_by_git",
 ]
+
+html_last_updated_fmt = "%d %B %Y"
+# - The date is when the change was committed, not when the file was saved. Edits you haven't committed yet still show 
+# the previous commit's date in the local preview.
+# - A new page that hasn't been committed shows no date until it is. It doesn't produce an error.
+# - Pages generated from Python source (autoapi) show no date, because they aren't stored in git. The same goes for pasted HTML 
+# references, since Sphinx copies them without adding its own footer.
+# - Notebooks (.ipynb) get a date like Markdown pages.
 
 exclude_patterns = [
     "_build", "_sources", "_extra",
