@@ -9,9 +9,9 @@ from pathlib import Path
 DOCS_DIR = Path(__file__).parent
 
 # -- Project information -----------------------------------------------------
-project = "MultiRoofs Tools Documentation"
-author = "MultiRoofs"
-copyright = f"{date.today().year}, {author}"
+project = "MultiRoofs Documentation"
+author = ""
+copyright = f"{date.today().year}, MultiRoofs"
 
 # -- General configuration ---------------------------------------------------
 extensions = [
@@ -96,7 +96,7 @@ nb_execution_mode = "off"            # notebooks are committed with outputs
 
 # -- HTML output -------------------------------------------------------------
 html_theme = "sphinx_book_theme"
-html_title = "MultiRoofs Tools Documentation"
+html_title = "MultiRoofs Documentation"
 html_logo = "_static/logo_text_horizontal-removebg-preview.png"
 html_favicon = "_static/logo-removebg-preview.png"
 html_static_path = ["_static"]
@@ -114,4 +114,8 @@ html_theme_options = {
     "use_issues_button": True,
     "show_toc_level": 2,
     "home_page_in_toc": True,
+    "extra_footer": (
+        '<p>MultiRoofs is funded by <a href="https://multiroofs.nweurope.eu/">INTERREG NWE</a></p>'
+    ),
+    "footer_content_items": ["copyright", "extra-footer", "last-updated"],
 }
