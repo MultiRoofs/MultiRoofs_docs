@@ -59,11 +59,14 @@ Adding the Roofer `bin` folder to the user `PATH`.
 
 ### Linux and macOS
 
-Open a terminal and run the install script:
+1. Go to the [Roofer releases page](https://github.com/3DBAG/roofer/releases/latest) and download
+   the file `roofer-linux-x86_64-v<version>.zip`, where `<version>` is the release number
+   (1.0.0 or later).
+2. Unzip the file in a folder of your choice, for example:
 
-```
-curl -fsSL https://raw.githubusercontent.com/3DBAG/roofer/refs/heads/main/distribution/install.sh | sh
-```
+   `/home/<you>/Downloads/roofer`
+
+   The program `roofer` is in the `bin` subfolder.
 
 If the folder `~/.local/bin` is not yet on your `PATH`, add this line to your shell profile
 (for example `~/.bashrc` or `~/.zshrc`) and open a new terminal:

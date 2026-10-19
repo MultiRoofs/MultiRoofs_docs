@@ -156,7 +156,7 @@ Setting the paths in the configuration file.
 
 The files referenced in the configuration file must exist at those locations, otherwise Roofer
 cannot read them. If Roofer reports that it cannot find the input files, replace the paths with
-full paths, for example `"C:/Data/wippolder/wippolder.las"`.
+full paths, for example `"C:/Data/wippolder/wippolder.las"`.  
 
 ## Step 5: Run the reconstruction
 

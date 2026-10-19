@@ -26,15 +26,23 @@ The full contributor guide is on the site itself, under **Tools > Contributing t
 
 ## Run it locally
 
+First time, to install everything you need:
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements-dev.txt
 
-# Live preview, rebuilds on every save. Open http://127.0.0.1:8000
-sphinx-autobuild docs docs/_build/html --ignore docs/api --ignore docs/_sources
+```
+Live preview, rebuilds on every save. Open http://127.0.0.1:8000
 
-# Or a one-off build, then open docs/_build/html/index.html
+```bash
+sphinx-autobuild docs docs/_build/html --ignore docs/api --ignore docs/_sources
+```
+
+Or a one-off build, then open docs/_build/html/index.html
+
+```bash
 sphinx-build -b html docs docs/_build/html
 ```
 
