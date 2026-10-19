@@ -64,7 +64,7 @@ Adding the Roofer `bin` folder to the user `PATH`.
    (1.0.0 or later).
 2. Unzip the file in a folder of your choice, for example:
 
-   `/home/<you>/Downloads/roofer`
+   `/home/<you>/Downloads/`
 
    The program `roofer` is in the `bin` subfolder.
 
@@ -73,6 +73,12 @@ If the folder `~/.local/bin` is not yet on your `PATH`, add this line to your sh
 
 ```
 export PATH="$HOME/.local/bin:$PATH"
+```
+
+3. Give execute permissions to the `roofer` file:
+
+```
+chmod +x /home/<you>/Downloads/roofer-linux-x86_64-v1.0.0/bin/roofer
 ```
 
 Then check the installation:
