@@ -91,15 +91,41 @@ For more details, see the [Roofer installation guide](https://innovation.3dbag.n
 
 ## Installing cjseq
 
-[cjseq](https://github.com/cityjson/cjseq) is an open-source tool for converting between
-CityJSONSeq and CityJSON.
+[cjseq](https://github.com/cityjson/cjseq) is an open-source tool for converting between CityJSONSeq and CityJSON.
 
-1. Install the Rust compiler by following the instructions at
+1. Install the Rust toolchain by following the instructions at
    [rust-lang.org](https://www.rust-lang.org/learn/get-started).
-   
-   When you install Rustup you’ll also get the latest stable version of the Rust build tool and package manager, also known as `Cargo`.
-2. Open a new Command Prompt and run:
+
+   Installing Rustup also installs the latest stable versions of the Rust compiler and its package manager, `cargo`.
+
+```{note}
+   On Linux and macOS, `cargo` is installed in `~/.cargo/bin`, which is only added to your PATH in new terminal sessions. If `cargo` is not found after installing, open a new terminal or run:
+
+       source "$HOME/.cargo/env"
+```
+
+```{warning}
+   Do not install Rust or Cargo with your system package manager (for example `sudo apt install cargo`). Distribution packages are often outdated and too old to build cjseq. If you already installed them this way, remove them with `sudo apt remove cargo rustc` before continuing.
+```
+
+2. Open a new terminal (or Command Prompt on Windows) and check that Cargo is version 1.85 or newer:
+
+```
+   cargo --version
+```
+
+   If the version is older, run `rustup update stable`.
+
+3. Install cjseq:
 
 ```
    cargo install cjseq
 ```
+
+4. Verify the installation with:
+
+```
+   cjseq --help
+```
+
+If the cjseq's usage is displayed, the installation has been successful. 
