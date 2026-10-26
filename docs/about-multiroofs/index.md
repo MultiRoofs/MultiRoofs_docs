@@ -42,26 +42,34 @@ MultiRoofs is a decision-support methodology for public authorities. It brings t
 
 The methodology is applied through an 8-step rooftop activation roadmap that guides public authorities from identifying priorities to designing incentives and pilots. It is generic at the method level and adapted locally: each city applies it with its own data, priorities and regulations.
 
-The digital twin supports this process. It visualises rooftop potential, allows scenarios to be compared, and gives departments and stakeholders a shared picture to discuss. It does not make decisions. Political and organisational choices remain with the public authority.
+The digital tools support this process by visualising rooftop potential, allowing scenarios to be compared, and giving departments and stakeholders a shared picture to discuss. It does not make decisions. Political and organisational choices remain with the public authority.
+
+```{figure} ./images/8-steps.jpg
+:alt: 8 steps rooftop activation roadmap
+:width: 100%
+:align: center
+:name: fig-roadmap
+
+Rooftop activation roadmap: from urban challenges to rooftop activation
+```
 
 ## What the project delivers
 
-MultiRoofs creates, tests and scales three solutions that help public authorities
-influence how rooftops are used:
+MultiRoofs creates, tests and scales three solutions that help public authorities influence how rooftops are used:
 
-1. **A digital twin tool set** to determine what is possible and desirable on specific roofs.
+1. **A set of tools** to determine what is possible and desirable on specific roofs. There is no single tool. The Multiroofs digital process involves a series of existing and developed applications during the project.
 2. **Approaches to identify property owners** who are likely to use their roofs multifunctionally, and the moments when they are most open to it (such as renovation or reroofing).
 3. **Incentives** that encourage these owners to act.
 
 These solutions are tested in six pilot actions and then shared through a training programme for 30 additional public authorities across North-West Europe.
 
-% TODO: add a diagram showing which MultiRoofs tool supports each part of the
-% methodology (Need, Can, Want) and each step of the roadmap, once the tools are
-% available.
+```{figure} ./images/mrtools.png
+:alt: A diagram showing the MultiRoofs tools developed in the consortium.
+:width: 80%
+:align: center
+:name: fig-mrtools
 
-```{note}
-A diagram showing how the MultiRoofs tools support each part of the methodology
-will be added once the tools are available.
+Set of tools developed in MultiRoofs (*work in progress*).
 ```
 
 ## How the project is organised
