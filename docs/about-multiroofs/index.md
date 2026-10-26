@@ -40,9 +40,7 @@ MultiRoofs is a decision-support methodology for public authorities. It brings t
 - **Want (Willen):** the interests, constraints and decision logic of building owners, users and institutions. See
   [Owners and incentives](../owners-and-incentives/index.md).
 
-The methodology is applied through an 8-step rooftop activation roadmap that guides public authorities from identifying priorities to designing incentives and pilots. It is generic at the method level and adapted locally: each city applies it with its own data, priorities and regulations.
-
-The digital tools support this process by visualising rooftop potential, allowing scenarios to be compared, and giving departments and stakeholders a shared picture to discuss. It does not make decisions. Political and organisational choices remain with the public authority.
+The methodology is applied through an 8-step rooftop activation roadmap that guides public authorities from identifying priorities to designing incentives and pilots. It is generic at the method level and adapted locally: each city applies it with its own data, priorities and regulations. The digital tools support this process by visualising rooftop potential, allowing scenarios to be compared, and giving departments and stakeholders a shared picture to discuss. It does not make decisions. Political and organisational choices remain with the public authority.
 
 ```{figure} ./images/8-steps.jpg
 :alt: 8 steps rooftop activation roadmap
@@ -52,6 +50,32 @@ The digital tools support this process by visualising rooftop potential, allowin
 
 Rooftop activation roadmap: from urban challenges to rooftop activation
 ```
+
+The roadmap is organised in four phases. The first three steps define what the city needs (*Moeten*), steps 4 and 5 assess what the building stock can offer (*Kunnen*), step 6 explores what stakeholders want (*Willen*), and steps 7 and 8 prepare the pilots.
+
+*Phase 1: Need (Moeten)*
+
+Step 1. Set city-wide priorities. The city selects the urban challenges that matter most across its whole territory, using the MultiRoofs framework as a reference. This selection draws on several sources at once: open data, existing policy, expert input, political direction, and the views of residents. Mannheim is used as an example in the roadmap.
+
+Step 2. Translate priorities to districts. Where relevant, the city determines which challenges apply to each of its urban districts. District priorities should be consistent with the city-wide priorities, so that local action supports the broader agenda. The Mannheim district of Neckarstadt-Ost illustrates this step.
+
+Step 3. Turn challenges into measurable targets. When data allows, the city expresses each challenge as quantified objectives linked to indicators. These targets often already exist in policy documents, for example a volume of water to retain, an amount of renewable energy to produce, a number of homes to add through rooftop extensions, or a number of species to support. The indicators are then converted into target areas of rooftop functions, expressed in square metres per colour.
+
+*Phase 2: Can (Kunnen)*
+
+Step 4. Map owners and buildings. The city classifies its building stock by building type and owner type, following the MultiRoofs typologies. To save effort, this mapping can be limited to the districts that ranked as most urgent in step 2.
+
+Step 5. Build a rooftop passport. For each roof, the city compiles all available city and district data into a rooftop passport. The passport summarises the spatial, technical, organisational and financial conditions of the roof, and complements the building and owner classification from step 4.
+
+*Phase 3: Want (Willen)*
+
+Step 6. Match opportunities with challenges. The city examines where the opportunities recorded in the rooftop passports, grouped by building type and owner type, overlap with the urban challenges identified at district or city level. The result is a set of scenarios showing which groups of roofs and owners can contribute to which priorities.
+
+Phase 4: Pilots
+
+Step 7. Select function combinations. With priorities established per district, building type and owner type, the city identifies combinations of rooftop functions that reinforce each other and respond to those priorities. Green and blue roofs together, for instance, serve water retention, while yellow and purple together support sustainable housing.
+
+Step 8. Design targeted incentives. The city lists the policy instruments it could use to encourage owners to activate their roofs, grouped into financial, advisory, regulatory and communication measures. These instruments are then directed at the districts, building types and owner types with the highest priority.
 
 ## What the project delivers
 
