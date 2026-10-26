@@ -89,6 +89,14 @@ project-docs/
 │   ├── getting-started/
 │   ├── tools/<tool>/                 # tutorials/, how-to/, explanation/, reference/
 │   ├── contributing/                 # contributor guide (shown under Tools)
+│   ├── about-multiroofs/             # general description of the project
+│   ├── digital-twins/                # general knowledge about digital twins
+│   ├── glossary/                     # summary of key terms in the project
+│   ├── owners-and-incentives         # general knowledge about owners and incentives
+│   ├── references/                   # references and interesting reads associated to the project
+│   ├── rooftops-and-buildings/       # general knowledge about rooftops and buildings
+│   ├── training-path/                # map each page to a lecture or module
+│   ├── urban-challenges/             # general knowledge about urban challenges
 │   ├── _extra/reference/<tool>/      # pasted, pre-built API references
 │   └── _static/
 ├── sample-sources/                   # demo source for geokit (delete later)
