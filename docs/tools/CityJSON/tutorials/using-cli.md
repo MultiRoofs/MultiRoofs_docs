@@ -148,7 +148,7 @@ available LoDs at the bottom of the viewer.
 :alt: LoD2.2 building models displayed in the ninja viewer
 :width: 80%
 :align: center
-:name: fig-ninja
+:name: fig-ninja-cli
 
 The reconstructed LoD2.2 buildings in ninja.
 ```
@@ -160,7 +160,7 @@ surface, such as its slope (`roof-gradient`) and orientation (`roof-azimuth`).
 :alt: Attributes of a selected building and roof surface in ninja
 :width: 80%
 :align: center
-:name: fig-ninja-attributes
+:name: fig-ninja-attributes-cli
 
 Inspecting the attributes of a building and of a roof surface.
 ```
@@ -181,7 +181,7 @@ To use your own point cloud and footprints, change the configuration file as fol
 :alt: Attribute table of the footprints showing a column with a unique ID per building
 :width: 80%
 :align: center
-:name: fig-uniqueid
+:name: fig-uniqueid-cli
 
 The footprints must contain a column with a unique ID for each building.
 ```

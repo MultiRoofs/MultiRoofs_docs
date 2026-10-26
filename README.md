@@ -103,3 +103,13 @@ Pushes to tool repositories do not rebuild this site by themselves. Copy
 `examples/tool-repo-trigger-docs.yml` into each tool repository as
 `.github/workflows/trigger-docs.yml` and follow the comments in it.
 This matters most for Python tools whose `ref` is a branch such as `main`.
+
+## License
+
+- **Content** (text and figures in `docs/`): [CC BY 4.0](LICENSE), unless stated
+  otherwise in a figure caption.
+- **Code** (Sphinx configuration, build scripts, and code samples):
+  [MIT](LICENSE-CODE).
+
+Third-party material, such as logos and adapted figures, keeps its original license.
+Each documented tool has its own license, stated in its section of the site.

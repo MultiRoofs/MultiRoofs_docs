@@ -1,14 +1,18 @@
 # Welcome
 
-This repository builds a single public documentation site for the MultiRoofs project. It 
-covers the project knowledge (concepts and background behind the project, such as 
-digital twins) and the documentation of every tool used in the project, both in-house 
-and third-party. Each tool section contains at least one these options: **Tutorials**, **How-to guides**, **Background** and **Reference**.
-Developers can contribute written pages as Markdown files or notebooks. API references 
-are either generated from the source code without installing anything (for Python 
-tools), linked to the tool's own published docs, or pasted as pre-built HTML when no 
-published docs exist. The site is built with Sphinx and rebuilds automatically on 
-every push to the repository.
+MultiRoofs helps cities turn their rooftops into multifunctional spaces that address
+urban challenges such as heat, flooding, energy demand, housing shortage, and
+biodiversity loss. This site brings together the knowledge behind the project and the
+documentation of the tools developed or used in it.
+
+It is written for local authorities, trainers, data analysts, and developers working
+on rooftop activation.
+
+- **Project background** explains the concepts: the urban challenges cities face,
+  what rooftops and buildings can offer, the owners and incentives that shape
+  decisions, and the digital twins that support analysis.
+- **Tools** explains how to install and use each MultiRoofs tool, from first
+  tutorial to full reference.
 
 New here? Start with [Getting started](getting-started/index.md).
 Adding or updating a tool? See [Contributing to these docs](contributing/index.md).
@@ -44,7 +48,7 @@ description
 {bdg-primary}`in-house` {bdg-secondary}`web service` {bdg-light}`linked reference`
 :::
 
-:::{grid-item-card} Urban Challenge assessment
+:::{grid-item-card} Urban Challenges assessment
 :link: tools/challenge_assessment/index
 :link-type: doc
 
@@ -56,9 +60,22 @@ description
 
 ```{toctree}
 :hidden:
-:caption: Project background
 
 getting-started/index
+```
+
+```{toctree}
+:hidden:
+:caption: Project background
+
+about-multiroofs/index
+urban-challenges/index
+rooftops-and-buildings/index
+owners-and-incentives/index
+digital-twins/index
+training-path/index
+glossary/index
+references/index
 ```
 
 ```{toctree}

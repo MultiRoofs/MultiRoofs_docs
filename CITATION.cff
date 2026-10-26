@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this documentation, please cite it as below."
+title: "MultiRoofs Documentation"
+type: software
+authors:
+  - name: "MultiRoofs project partners"
+version: "1.0.0"            # match your release tag
+date-released: "2026-10-26"  # date of the release
+url: "https://multiroofs.github.io/MultiRoofs_docs/"
+repository-code: "https://github.com/MultiRoofs/MultiRoofs_docs"
+license: CC-BY-4.0
+# doi: 10.5281/zenodo.XXXXXXX   # add after Zenodo release
+keywords:
+  - rooftops
+  - digital twins
+  - urban planning
+  - Interreg North-West Europe
+references:
+  - type: generic
+    title: "Multifunctional Roofscapes for smart, green and just urban densification"
+    authors:
+      - name: "MultiRoofs project partners"
+    url: "https://multiroofs.nweurope.eu/"
+    notes: "Interreg North-West Europe project NWE0400462, 2024-2029."

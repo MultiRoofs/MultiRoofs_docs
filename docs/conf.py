@@ -11,7 +11,7 @@ DOCS_DIR = Path(__file__).parent
 # -- Project information -----------------------------------------------------
 project = "MultiRoofs Documentation"
 author = ""
-copyright = f"{date.today().year}, MultiRoofs"
+copyright = f"{date.today().year}, MultiRoofs project partners"
 
 # -- General configuration ---------------------------------------------------
 extensions = [
@@ -115,7 +115,12 @@ html_theme_options = {
     "show_toc_level": 2,
     "home_page_in_toc": True,
     "extra_footer": (
-        '<p>MultiRoofs is funded by <a href="https://multiroofs.nweurope.eu/">INTERREG NWE</a></p>'
+        '<p>Text and figures are licensed under '
+        '<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, '
+        'unless stated otherwise. Code samples are licensed under the '
+        '<a href="https://github.com/MultiRoofs/MultiRoofs_docs/blob/main/LICENSE-CODE">MIT License</a>.</p>'
+        '<p>MultiRoofs is co-funded by the European Union through '
+        '<a href="https://multiroofs.nweurope.eu/">Interreg North-West Europe</a>.</p>'
     ),
     "footer_content_items": ["copyright", "extra-footer", "last-updated"],
 }

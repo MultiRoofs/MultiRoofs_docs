@@ -1,4 +1,4 @@
-# Explanation
+# Background
 
 Why and how the project uses NumPy.
 

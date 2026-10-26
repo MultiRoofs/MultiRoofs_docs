@@ -1,4 +1,4 @@
-# Explanation
+# Background
 
 Background and design decisions.
 
