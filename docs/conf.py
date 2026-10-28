@@ -90,7 +90,7 @@ intersphinx_mapping = {
 }
 
 # -- MyST / notebooks --------------------------------------------------------
-myst_enable_extensions = ["colon_fence", "deflist", "fieldlist"]
+myst_enable_extensions = ["colon_fence", "deflist", "fieldlist", "html_image"]
 myst_heading_anchors = 3
 nb_execution_mode = "off"            # notebooks are committed with outputs
 
