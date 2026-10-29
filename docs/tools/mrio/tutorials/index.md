@@ -12,14 +12,10 @@ This section provides step-by-step tutorials to help users understand how to wor
 [MRIO](https://multiroofs.github.io/mrio/) (MultiRoofs input/output) is a web tool for preparing, checking, and editing 3D building data. It is part of the MultiRoofs workflow. Instead of opening a complex JSON file and editing it by hand, you can use buttons and simple dialogs to manage building information.
  Figure 1 below illustrates the MRIO welcome page.
 
-
-```{figure} images/figure_01.png
-:width: 400px
-:align: center
-
-Figure 1: The MRIO welcome page. Use Browse files or drag and drop a supported model.
-```
-
+<div style="text-align: center;">
+  <img src="images/figure_01.png" alt="MRIO welcome page" width="400">
+  <p><em>Figure 1: The MRIO welcome page. Use Browse files or drag and drop a supported model.</em></p>
+</div>
 
 ## 2. Upload your file
 
@@ -27,36 +23,25 @@ Figure 1: The MRIO welcome page. Use Browse files or drag and drop a supported m
 
 2. Click Browse files and select a .city.json or .city.jsonl file, or drag it onto the upload area. As shown in Figure 2 below
 
-
-```{figure} images/figure_02.png
-:width: 600px
-:align: center
-
-Figure 2: Upload the CityJSON or CityJSONSeq file.
-```
-
+<div style="text-align: center;">
+  <img src="images/figure_02.png" alt="MRIO upload  page">
+  <p><em>Figure 2: Upload the cityjson or cityjsonl file.</em></p>
+</div>
 
 3. Wait for the File Overview to appear. Check that the format, number of objects, vertices, and CRS are shown. Note: If you notice that the data in the File Overview and Attributes sections of your website differ from what is shown in the screenshot, it is because you uploaded a different type of file containing different data.
-
-```{figure} images/figure_03.png
-:width: 700px
-:align: center
-
-Figure 3: File Overview after uploading.
-```
-
+<div style="text-align: center;">
+  <img src="images/figure_03.png" alt="MRIO tutorial screenshot 3">
+  <p><em>Figure 3. File Overview after uploading.</em></p>
+</div>
 
 ## 3. Understanding the main workspace
 
 After uploading a CityJSON or CityJSONSeq file, MRIO displays the main interface as shown in Figure 4 below, which is divided into two sections: the Operations panel on the left,  the File Overview panel in the center and the Attributes section.
 
-
-```{figure} images/figure_04.png
-:width: 700px
-:align: center
-
-Figure 4: The main workspace, showing the Operations panel on the left and the File Overview panel on the right.
-```
+<div style="text-align: center;">
+  <img src="images/figure_04.png" alt="MRIO tutorial screenshot 4">
+  <p><em>Figure 4 The main workspace.</em></p>
+</div>
 
 The <span style="color: #D32F2F; font-weight: 600;">Operations panel</span> , located on the left side of the interface, provides the tools needed to process and modify the uploaded file. Users can calculate roof surface areas and building volumes, delete or rename existing attributes, convert Roofer output into the MultiRoofs format, import additional attributes from CSV files, update the Coordinate Reference System (CRS),  and validate the dataset. The panel also includes a Download button to save the processed file and a Load different file button to upload another dataset.
 
@@ -78,26 +63,19 @@ This operation is especially useful MRIO converts the structure of the uploaded 
 3. Optionally - click "Validate file" in the operations section to check the resulting structure.
 
 
-```{figure} images/figure_05.png
-:width: 600px
-:align: center
-
-Figure 5: After preparation, BuildingParts are merged into their Buildings, and Building objects remain.
-```
-
+<div style="text-align: center;">
+  <img src="images/figure_05.png" alt="perpare file">
+  <p><em>Figure 5: After preparation: BuildingParts merged into their Buildings; Building objects remain.</em></p>
+</div>
 
 ## 5. Validate file
 Validation checks whether the model follows important CityJSON structural rules. Use it before editing and again after any major operation. Green check marks indicate passed checks; red symbols identify findings that need review.
 
 
-
-```{figure} images/figure_06.png
-:width: 500px
-:align: center
-
-Figure 6: Validation dialog.
-```
-
+<div style="text-align: center;">
+  <img src="images/figure_06.png" alt="perpare file">
+  <p><em>Figure 6: Validation dialog.</em></p>
+</div>
 
 ## 6. Import attributes from a CSV file (optional)
 This operation is optional. You can use it if you have an attribute that you want to add to your file. A CSV is table. Each row represents one CityObject, and its first column must contain that object’s exact ID. The remaining columns become new attributes. The ID column is used for matching, not copied as a new attribute.
@@ -111,41 +89,28 @@ If you have a CSV file containing attributes that you want to add to your file, 
 3. Click Add attributes and check the results in the Attributes section.
 
 4. Validate the file after importing.
-
-```{figure} images/figure_6csv.png
-:width: 600px
-:align: center
-
-Figure 7: Steps to Add Attributes from a CSV File.
-```
-
+<div style="text-align: center;">
+  <img src="images/figure_6csv.png" alt="attributes from a CSV  file">
+  <p><em>Figure 7: Steps to Add Attributes from a CSV File.</em></p>
+</div>
 
 ## 8. Rename or delete attributes
 
 ### Rename attribute
 
-Click Rename attribute, select the existing attribute name, enter a new name, and click Rename. This changes the attribute key rather than its value try to use meaningful name.
+Click Rename attribute, select the existing attribute name, enter a new name, and click Rename. This changes the attribute key rather than its value. Use meaningful names, and take care with extension-defined attributes such as +roof-total-area.
 
-```{figure} images/figure_07.png
-:width: 600px
-:align: center
+![MRIO tutorial screenshot 7](images/figure_07.png)
 
-Figure 8: Rename Attribute dialog: select an existing name and type its replacement.
-```
-
+*Figure — Rename Attribute dialog: select an existing name and type its replacement.*
 
 ### Delete attribute
 
 Click Delete attribute, choose the attribute to remove, and confirm with Delete. The chosen attribute is removed from the relevant CityObjects, so check carefully before confirming.
 
+![MRIO tutorial screenshot 8](images/figure_08.png)
 
-```{figure} images/figure_08.png
-:width: 600px
-:align: center
-
-Figure 9: Delete Attribute dialog.
-```
-
+*Figure — Delete Attribute dialog.*
 
 ## 9. Add roof area and building volume
 
@@ -157,26 +122,13 @@ For Roofer-generated files, a sensible workflow is to first prepare the file for
 
 As shown in the figure below in the attribute section. The +roof-total-area attribute represents the calculated total area of a building's roof surfaces, rather than the height of the roof. The File Overview displays an example numeric value for this attribute, along with the number and percentage of buildings that contain it. In the illustrated example, the attribute has a displayed value of 186.711, and 2 out of 2 Buildings (100%) contain the +roof-total-area attribute.
 
-
-```{figure} images/figure_09.png
-:width: 600px
-:align: center
-
-Figure 10: MRIO tutorial screenshot.
-```
+![MRIO tutorial screenshot 9](images/figure_09.png)
 
 ## 7. Set CRS – optional
 
 The Coordinate Reference System (CRS) describes how coordinates relate to locations on Earth. Click Set CRS, enter the intended EPSG code, and confirm. For example, EPSG:28992 is used for the Dutch national coordinate system.
 
-
-```{figure} images/figure_10.png
-:width: 500px
-:align: center
-
-Figure 11: Set EPSG Code dialog.
-```
-
+![MRIO tutorial screenshot 10](images/figure_10.png)
 
 *Figure — Set EPSG Code dialog.*
 
