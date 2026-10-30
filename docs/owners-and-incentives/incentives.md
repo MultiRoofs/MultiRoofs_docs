@@ -24,7 +24,7 @@ This classification follows the [Rooftop Activation Ontology](https://alejandro3
 
 ```{figure} ./images/fig_incentive_instruments.png
 :alt: Hierarchy structure of “Incentive”
-:width: 80%
+:width: 100%
 :align: center
 :name: fig-incentive
 
@@ -263,7 +263,9 @@ A city offers a **green roof grant**: a non-repayable sum covering part of the c
 
 ## Incentives, rooftops and owners
 
-Each concrete incentive is linked to the rooftop colours it supports, for example a grant for green or blue roofs. Separately, MultiRoofs records how suitable each incentive type is for each owner type, as a degree between 0 and 1 that a city can adjust to its own context. These links make it possible to trace how an incentive reaches owners, which roofs they activate, and which urban challenges those roofs address. See [Connecting challenges, rooftops, owners, and incentives](../index.md).
+Each concrete incentive is linked to the rooftop colours it supports, for example a grant for green or blue roofs. MultiRoofs also records how suitable each incentive
+type is for each owner type, as a degree between 0 and 1. These degrees are general defaults that each city can replace with its own estimates, so that the same
+knowledge base reflects different local contexts. Together, these links help a city see which incentives fit the roofs and owners it wants to reach. See [From priorities to action](../from-priorities-to-action/index.md).
 
 % TODO: update the link above once the Connecting page exists.
 

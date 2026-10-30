@@ -72,6 +72,7 @@ about-multiroofs/index
 urban-challenges/index
 rooftops-and-buildings/index
 owners-and-incentives/index
+from-priorities-to-action/index
 digital-twins/index
 training-path/index
 glossary/index
