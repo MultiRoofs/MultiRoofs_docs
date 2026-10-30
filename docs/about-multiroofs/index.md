@@ -40,7 +40,7 @@ MultiRoofs is a decision-support methodology for public authorities. It brings t
 - **Want (Willen):** the interests, constraints and decision logic of building owners, users and institutions. See
   [Owners and incentives](../owners-and-incentives/index.md).
 
-The methodology is applied through an 8-step rooftop activation roadmap that guides public authorities from identifying priorities to designing incentives and pilots. It is generic at the method level and adapted locally: each city applies it with its own data, priorities and regulations. The digital tools support this process by visualising rooftop potential, allowing scenarios to be compared, and giving departments and stakeholders a shared picture to discuss. It does not make decisions. Political and organisational choices remain with the public authority.
+The methodology is applied through an [8-step rooftop activation roadmap](../from-priorities-to-action/index.md) that guides public authorities from identifying priorities to designing incentives and pilots. It is generic at the method level and adapted locally: each city applies it with its own data, priorities and regulations. The digital tools support this process by visualising rooftop potential, allowing scenarios to be compared, and giving departments and stakeholders a shared picture to discuss. It does not make decisions. Political and organisational choices remain with the public authority.
 
 ```{figure} ./images/8-steps.jpg
 :alt: 8 steps rooftop activation roadmap
