@@ -120,7 +120,7 @@ Synchronisation does not always mean real time. A twin of a power plant may need
 - Apte, P. and Spanos, C. (2021). The digital twin opportunity. *MIT Sloan Management Review*, 63(1), 15–17.
 - IBM (2025). *What is a digital twin?* <https://www.ibm.com/think/topics/digital-twin>
 - Kritzinger, W., Karner, M., Traar, G., Henjes, J. and Sihn, W. (2018). Digital twin in manufacturing: a categorical literature review and classification. *IFAC-PapersOnLine*, 51(11), 1016–1022, <https://doi.org/10.1016/j.ifacol.2018.08.474>.
-- Matta, A. and Lugaresi, G. (2024). An introduction to digital twins. In *Proceedings of the 2024 Winter Simulation Conference*.
+- - Matta, A. and Lugaresi, G. (2024). An introduction to digital twins. In *Proceedings of the 2024 Winter Simulation Conference*, <https://doi.org/10.1109/WSC63780.2024.10838793>.
 - Parrott, A. and Warshaw, L. (2017). *Industry 4.0 and the digital twin: manufacturing meets its match*. Deloitte Insights. <https://www.deloitte.com/content/dam/insights/articles/2024/3833_industry4-0_digital-twin-technology/dup-industry-4.0-digital-twin-technology.pdf>
 - Tao, F. and Zhang, M. (2017). Digital twin shop-floor: a new shop-floor paradigm towards smart manufacturing. *IEEE Access*, 5, 20418–20427, <https://doi.org/10.1109/ACCESS.2017.2756069>.
 - Urban Design Lab (2025). *Digital twins: pioneering sustainable and smart urban futures*. <https://urbandesignlab.in/digital-twins-pioneering-sustainable-and-smart-urban-futures/>
