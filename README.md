@@ -34,7 +34,7 @@ source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements-dev.txt
 
 ```
-Live preview, rebuilds on every save. Open http://127.0.0.1:8000
+Live preview, rebuilds on every save. Open http://127.0.0.1:8000 after running this command
 
 ```bash
 sphinx-autobuild docs docs/_build/html --ignore docs/api --ignore docs/_sources

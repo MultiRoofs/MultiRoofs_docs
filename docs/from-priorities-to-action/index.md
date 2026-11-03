@@ -21,7 +21,7 @@ The MultiRoofs framework connects two sides:
 Matching the two shows where rooftop activation would be both feasible and useful. This match is then confronted with **what stakeholders want**, since no roof is activated without the agreement of its owner.
 
 ```{figure} ./images/mutiroofs-framework.png
-:alt: 
+:alt: The MultiRoofs framework
 :width: 100%
 :align: center
 :name: fig-multiroofs-framework
@@ -98,7 +98,7 @@ The six pilot cities in MultiRoofs (Rotterdam, Brussels, Mechelen, Mannheim, Îl
 how the tools developed in MultiRoofs performs with local data, how authorities can identify the right owners at the right moment, and which forms of support lead to action. Their
 results will refine the roadmap and the guidance on this site.
 
-% TODO: add links to pilot case descriptions once available.
+**TODO**: add links to pilot case descriptions once available and describe how the developed tools and/or the MultiRoofs framework was used in practice.
 
 ```{admonition} Key takeaways
 :class: important
