@@ -53,6 +53,13 @@ Aligning rooftop proposals with these moments lowers costs and barriers, and inc
 
 The ten types apply across North-West Europe, but owners within the same type can behave differently from one city to another because of cultural, social and economic factors. In Mannheim, for example, homes often stay in the same family for several generations. In Mechelen, homeowners commonly sell and buy several times within a single generation. The definitions are therefore kept general, and each city should interpret them in light of its local housing market.
 
+# How to approach and communicate with building owners
+
+TBC 
+
+% TODO: add content on how to approach and communicate with building owners, based
+% on the experience of the pilot cities.
+
 ```{admonition} Key takeaways
 :class: important
 - MultiRoofs distinguishes ten owner types, from individual homeowners to institutional investors.
