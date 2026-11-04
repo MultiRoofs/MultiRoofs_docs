@@ -17,6 +17,8 @@ on rooftop activation.
 New here? Start with [Getting started](getting-started/index.md).
 Adding or updating a tool? See [Contributing to these docs](contributing/index.md).
 
+**The following tools were developed in the MultiRoofs project** 
+
 ::::{grid} 1 2 2 2
 :gutter: 3
 
