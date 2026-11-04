@@ -1,3 +1,3 @@
-# References and further reading
+# Publications and resources
 
 TBD
