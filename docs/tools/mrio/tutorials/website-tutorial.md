@@ -187,16 +187,16 @@ The Coordinate Reference System (CRS) describes how coordinates relate to locati
 
 1. Click Download in the Operations panel.
 
-2. Select CityJSON or CityJSONSeq, depending on the type of your original file. 
-
- <strong style="color: #c52323;"> Important Note!!!, </strong> when downloading the processed file, make sure to select the correct output format in the Download File window. If your file is in CityJSON format (.city.json), select CityJSON. If your file is in CityJSONSeq format (.city.jsonl), select CityJSONSeq. The selected format should match the file type you intend to use. You can also modify the filename before downloading, always select the appropriate output format and ensure that the filename extension matches the selected format before clicking Download. Once the format and filename have been verified, click the Download button to save the processed file to your computer.
-
- In the illustrated example in Figure 12, the file is in CityJSON format (.city.json). Therefore, the CityJSON option is selected, while the CityJSONSeq option is marked with a red cross <strong style="color: #f31313;"> ✗ </strong>  because it is not required.
-However, if your file is in CityJSONSeq format (.city.jsonl), the second option (CityJSONSeq) should be selected instead of the first option (CityJSON).
+2. Select CityJSON or CityJSONSeq, depending on the type of your original file.
 
 3. Check the filename and extension: .city.json for CityJSON, .city.jsonl for CityJSONSeq.
 
 4. Click Download, then reopen the saved file in MRIO or another compatible viewer to verify it.
+
+ <strong style="color: #0b8b25;"> Important Note! </strong> when downloading the processed file, make sure to select the correct output format in the Download File window. If your file is in CityJSON format (.city.json), select CityJSON. If your file is in CityJSONSeq format (.city.jsonl), select CityJSONSeq. The selected format should match the file type you intend to use. You can also modify the filename before downloading, always select the appropriate output format and ensure that the filename extension matches the selected format before clicking Download. Once the format and filename have been verified, click the Download button to save the processed file to your computer.
+
+ In the illustrated example in Figure 12, the file is in CityJSON format (.city.json). Therefore, the CityJSON option is selected, while the CityJSONSeq option is marked with a red cross <strong style="color: #f31313;"> ✗ </strong>  because it is not required.
+However, if your file is in CityJSONSeq format (.city.jsonl), the second option (CityJSONSeq) should be selected instead of the first option (CityJSON).
 
 ```{image} images/figure_11_cityjson.png
 :width: 500px
@@ -206,7 +206,7 @@ However, if your file is in CityJSONSeq format (.city.jsonl), the second option 
 <p style="text-align: center;"><em>Figure 12: Download the file based on the selected output format.</em></p>
 
 
-
+> Note: If you want to download the file in CityJSON format instead of CityJSONSeq, you must select CityJSON as the output format and manually remove the letter “l” from the filename extension, changing .city.jsonl to .city.json.
 
 </div>
 

@@ -1,6 +1,6 @@
 # UI Tutorial
 
-## 1. Introduction
+##  Introduction
 
 MRIO provides a terminal-based user interface (TUI) for inspecting and modifying CityJSON and CityJSONSeq datasets. It runs inside a terminal, most actions are selected from the Operations panel with the keyboard.
 
@@ -16,7 +16,15 @@ Rust and Cargo, this is the official [Rust website](https://rustup.rs/) where yo
 The first step is to obtain the MRIO source code from the project's
 GitHub repository. Open the [MRIO repository page](https://github.com/MultiRoofs/mrio) in a web browser and download the project using the **Code → Download ZIP** option.
 Alternatively, users who are familiar with Git can clone the repository
-directly. ![MTIO githup](images/mrio_githup.png)
+directly. 
+```{image} images/mrio_githup.png
+:width: 700px
+:align: center
+:alt: MRIO GitHub repository page
+```
+<p style="text-align: center;"><em>
+Figure 1: The MRIO GitHub repository page, where the source code can be downloaded using Code → Download ZIP.</em></p>
+
 
 When the ZIP archive has finished downloading, extract it to a
 convenient location on the computer, for example inside the
@@ -31,15 +39,19 @@ For example, the extracted directory may be located at:
 C:\Users\<username>\Downloads\mrio
 ```
 
-A particularly important file in this directory is `Cargo.toml`. This
+A particularly important file in mrio directory is `Cargo.toml`. This
 file identifies the Rust project and contains information Cargo needs
-when building the application. Before executing MRIO build commands,
-make sure the terminal is opened in the directory containing
-`Cargo.toml`.
+when building the application.
 
 ## Place the Input Files in the Data Folder
-Before starting MRIO, place your input file that you want to process inside the data folder of the MRIO project. The data folder is located in the main MRIO project directory, as shown in Figure 3. This folder provides a convenient location for storing the CityJSON and CityJSONSeq files that will be opened and processed with MRIO.
-![MTIO data_folder](images/data_folder.png)
+Before starting MRIO, place the input file that you want to process inside the `data` folder of the mrio project. This `data` folder is located inside the mrio project folder that you downloaded from GitHub in the previous step. as shown in Figure 2. This folder provides a convenient location for storing the CityJSON and CityJSONSeq files that will be opened and processed with MRIO.
+```{image} images/data_folder.png
+:width: 700px
+:align: center
+:alt: Data folder inside the MRIO project directory
+```
+<p style="text-align: center;"><em>Figure 2: The data folder inside the main MRIO project directory.</em></p>
+
 ## 2. Install Rust
 
 MRIO requires Rust version 1.81 or newer. Download Rust from the official [Rust website](https://rustup.rs/). After downloading the Windows installer, open it. A command-line
@@ -57,8 +69,12 @@ For a normal MRIO installation, choose:
 ```
 Because this is the default option, simply press **Enter**.
 
-![rust_download](images/rust_download.png)
-
+```{image} images/rust_download.png
+:width: 700px
+:align: center
+:alt: Rust installation page
+```
+<p style="text-align: center;"><em>Figure 3: The official Rust installation page for downloading and installing Rust.</em></p>
 
 The standard installation installs **Rust**, **Cargo**, and **rustup**.
 Cargo is particularly important for MRIO because it is Rust's package
@@ -110,12 +126,17 @@ For example:
 cd C:\Users\<username>\Downloads\mrio
 ```
 
-Replace `<username>` with the actual Windows username.
+Replace `C:\Users\<username>\Downloads\` with the actual mrio folder location.
+Another simple method is to open the extracted MRIO folder in Windows File Explorer, click the address bar, type `cmd`, and press Enter. Command Prompt will open directly in that directory, so you do not need to navigate to the folder manually using the `cd` command.
 
-Another simple method is to open the extracted MRIO folder in Windows File Explorer, click the address bar, type `cmd`, and press Enter. Command Prompt will open directly in that directory.
 
+```{image} images/MRIO_CMD.png
+:width: 700px
+:align: center
+:alt: Opening Command Prompt from the MRIO project folder
+```
+<p style="text-align: center;"><em>Figure 4: Opening Command Prompt directly from the MRIO project folder using the File Explorer address bar.</em></p>
 
-![MRIO_CMD](images/MRIO_CMD.png)
 
 Verify the directory contents using:
 
@@ -125,7 +146,7 @@ dir
 
 ### Build MRIO and Run with the Example CityJSON File
 
-Figure 6 below explains the build process and provides an example of how to use MRIO.
+Figure 5 below explains the build process and provides an example of how to use MRIO.
  Once the terminal is in the MRIO project directory, build the project
 using:
 
@@ -143,24 +164,25 @@ In this section, the file `data/3dbag_b2.city.json`, which is located in the dat
 
 For example, the command used in this tutorial is:
 
+``` bash
 cargo run -p mrio-cli -- data/3dbag_b2.city.json
-
+```
 If your file is named my_buildings.city.json, replace the example filename as follows:
 
 cargo run -p mrio-cli -- data/my_buildings.city.json
 
-If you don't have a file, you can use the file provided in this command. After MRIO has been built successfully, start it from the same project
-directory:
-
-``` bash
-cargo run -p mrio-cli -- data/3dbag_b2.city.json
-```
-![MRIO_build](images/build.png)
-The command consists of `data/3dbag_b2.city.json` specifies the CityJSON file MRIO should
- open.
-
-If the command runs successfully, the MRIO Terminal User Interface
+If you do not have your own CityJSON file, you can use the example file `3dbag_b2.city.json` provided in the `data` folder. After entering the command, press  `Enter` from the keyboard to start MRIO. If the command runs successfully, the MRIO Terminal User Interface
 (TUI) appears directly inside the terminal.
+
+
+```{image} images/build.png
+:width: 700px
+:align: center
+:alt: Running MRIO with the example CityJSON file
+```
+
+<p style="text-align: center;"><em>Figure 5: Running MRIO with the example CityJSON file.</em></p>
+
 
 ## 3. Understanding the MRIO Terminal User Interface
 
@@ -168,7 +190,13 @@ Once MRIO starts, the terminal changes from a normal command prompt into
 an interactive interface. The interface is divided primarily into an
 <span style="color: darkred;"> **Operations panel**</span> on the left and a <span style="color: darkred;">**File Overview panel**</span> on the
 right.
-![mrio_ui](images/mrio_ui.png)
+```{image} images/mrio_ui.png
+:width: 700px
+:align: center
+:alt: MRIO Terminal User Interface
+```
+
+<p style="text-align: center;"><em>Figure 6: MRIO Terminal User Interface.</em></p>
 
 The Operations panel can include:
 -   Prepare file for MultiRoofs
@@ -202,9 +230,13 @@ MRIO is keyboard-driven. The most important controls are:
 
 Select Prepare file for MultiRoofs with `↑`/`↓`, then press `Enter`.
 
-![Prepare for MultiRoofs success](images/mrfigure_03.png)
+```{image} images/mrfigure_03.png
+:width: 700px
+:align: center
+:alt: Preparing a file for MultiRoofs
+```
 
-*Figure 3: Successful preparation of the CityJSON dataset for MultiRoofs.*
+<p style="text-align: center;"><em>Figure 7: File prepared for MultiRoofs.</em></p>
 
 The success message in this example reports that MRIO:
 
@@ -218,17 +250,25 @@ This operation therefore does more than change the file format. It modifies the 
 
 Press `Enter` to close the success dialog and return to the main interface.
 
-![Prepared MultiRoofs file overview](images/mrfigure_04.png)
+```{image} images/mrfigure_04.png
+:width: 700px
+:align: center
+:alt: File overview after preparation
+```
 
-*Figure 4: File overview after preparation. The dataset now contains the MultiRoofs extension and the prepared building information.*
+<p style="text-align: center;"><em>Figure 8: File overview after preparation.</em></p>
 
 ## 5. Import attributes from a CSV file
 
-Choose Import attributes from CSV and press `Enter`. MRIO opens a text-entry dialog asking for the CSV file path.
+Choose Import attributes from CSV and press `Enter`. MRIO opens a text-entry dialog asking for the CSV file path. Type the path to the CSV file and press `Enter`.
 
-![CSV path dialog](images/mrfigure_05.png)
+```{image} images/mrfigure_05.png
+:width: 700px
+:align: center
+:alt: CSV file path dialog
+```
 
-*Figure 5: CSV File Path dialog. Type the path to the CSV file and press `Enter`.*
+<p style="text-align: center;"><em>Figure 9: CSV file path dialog.</em></p>
 
 For a file inside the project's `data` folder, an example path is:
 
@@ -236,32 +276,40 @@ For a file inside the project's `data` folder, an example path is:
 data/attributes.csv
 ```
 
-The file must be a real CSV (Comma Separated Values) file. An Excel `.xlsx` workbook is not the same format.
-The message `Added attributes to 0 object(s) from CSV` means that no object was updated. Correct the CSV IDs so they match the CityObject IDs in the CityJSON file, then import the corrected CSV again.
+The file must be a real CSV (Comma Separated Values) file. In this example, MRIO reports that attributes were successfully added to 2 objects. A green Success message confirms that the import worked.
 
-![CSV import success](images/mrfigure_08.png)
+```{image} images/mrfigure_08.png
+:width: 700px
+:align: center
+:alt: Successful CSV import
+```
 
-*Figure 8: Successful CSV import. MRIO reports that attributes were added to 2 objects.*
-
-A green Success message confirms that the import worked.
+<p style="text-align: center;"><em>Figure 10: Successful CSV attribute import.</em></p>
 
 
 ### Matching object identifiers is essential
 
-The identifier column in the CSV must refer to CityObject IDs that actually exist in the loaded CityJSON dataset. If they do not match, MRIO cannot decide which objects should receive the new values.
+If you accidentally load the wrong CSV file, or a CSV file containing identifiers that do not match the objects in the loaded CityJSON dataset, the attributes will not be imported. The identifier column in the CSV must refer to CityObject IDs that actually exist in the loaded CityJSON dataset.  If the IDs do not match, MRIO cannot determine which CityObjects should receive the new attribute values. In this case, MRIO may display the message: `Added attributes to 0 object(s) from CSV` means that no object was updated.  Check and correct the IDs in the CSV file so that they match the CityObject IDs in the CityJSON dataset, and then import the corrected CSV file again.
 
-![CSV object ID error](images/mrfigure_07.png)
-
-*Figure 7: CSV import error. The CSV refers to CityObjects `5`, `10`, `11`, and `12`, but those IDs are not present in the loaded dataset.*
+```{image} images/mrfigure_07.png
+:width: 700px
+:align: center
+:alt: CSV object ID error
+```
+<p style="text-align: center;"><em> Figure 11: CSV import error. The CSV refers to CityObjects `5`, `10`, `11`, and `12`, but those IDs are not present in the loaded dataset</em></p>
 
 
 ## 6. Validate the file
-
+Validation checks whether the model follows important CityJSON structural rules. Use it before editing and again after any major operation. Green check marks indicate passed checks; red symbols identify findings that need review.
 Select Validate file and press `Enter` to run MRIO's validation checks.
 
-![Schema validation](images/mrfigure_09.png)
+```{image} images/mrfigure_09.png
+:width: 700px
+:align: center
+:alt: Schema validation results
+```
 
-*Figure 9: Schema Validation results showing the validation categories checked by MRIO.*
+<p style="text-align: center;"><em>Figure 12: CityJSON validation results in MRIO.</em></p>
 
 The dialog can show checks such as JSON syntax, schema, extensions, parent/child consistency, vertex indices, semantics arrays, textures, materials, extra root properties, duplicate vertices, and unused vertices. Treat the validation report as a diagnostic summary investigate any category reported as an error or warning before relying on the dataset downstream.
 > **Important:** changes are held in the current MRIO session until you use Save. An asterisk (`*`) beside the filename in the blue title bar indicates that the loaded dataset has unsaved changes.
@@ -272,27 +320,42 @@ The dialog can show checks such as JSON syntax, schema, extensions, parent/child
 
 Choose **Rename attribute** and press `Enter`. MRIO first displays the attributes that can be renamed.
 
-Use `↑`/`↓` to highlight the desired attribute and press `Enter`.
+Use `↑`/`↓` to highlight the desired attribute and press `Enter`. MRIO then asks for the new attribute name.
 
-![Rename attribute selection](images/mrfigure_11.png)
+```{image} images/mrfigure_11.png
+:width: 700px
+:align: center
+:alt: Rename attribute selection
+```
 
-*Figure 11: Selecting `+roof-total-area` from the list of attributes to rename.*
+<p style="text-align: center;"><em>Figure 13: Selecting `+roof-total-area` from the list of attributes to rename.</em></p>
 
-MRIO then asks for the new attribute name.
+```{image} images/mrfigure_12.png
+:width: 700px
+:align: center
+:alt: New attribute name dialog
+```
 
-![New attribute name dialog](images/mrfigure_12.png)
+<p style="text-align: center;"><em>Figure 14: Entering a new name for the selected attribute.</em></p>
 
-*Figure 12: Dialog requesting a new name for the selected attribute.*
+Type the new attribute name and press `Enter`. In this example, the attribute `+roof-total-area` is renamed to `top_area`.
+```{image} images/mrfigure_13.png
+:width: 700px
+:align: center
+:alt: Entering the new attribute name
+```
 
-Type the new name and press `Enter`. In the example, `+roof-total-area` is renamed to `top_area`.
+<p style="text-align: center;"><em>Figure 15: Entering `top_area` as the new attribute name.</em></p>
 
-![Typing top_area](images/mrfigure_13.png)
+```{image} images/mrfigure_14.png
+:width: 700px
+:align: center
+:alt: Attribute rename success
+```
 
-*Figure 13: Entering `top_area` as the replacement attribute name.*
+<p style="text-align: center;"><em>Figure 16: Successful attribute rename.</em></p>
 
-![Rename success](images/mrfigure_14.png)
-
-*Figure 14: Successful rename. MRIO reports that `+roof-total-area` was renamed to `top_area` in 2 objects.*
+MRIO confirms that the attribute `+roof-total-area` was successfully renamed to `top_area` in 2 objects.
 
 The number of objects in the success message is useful: it tells you how many CityObjects actually contained the renamed attribute.
 
@@ -300,25 +363,41 @@ The number of objects in the success message is useful: it tells you how many Ci
 
 Select **Add roof area** and press `Enter`. MRIO calculates the roof area and adds the result as the `+roof-total-area` attribute to applicable objects.
 
-![Add roof area](images/mrfigure_15.png)
+```{image} images/mrfigure_15.png
+:width: 700px
+:align: center
+:alt: Roof area calculation
+```
 
-*Figure 15: Successful roof-area calculation. MRIO reports that `+roof-total-area` was added to 2 objects.*
+<p style="text-align: center;"><em>Figure 17: Successful roof area calculation.</em></p>
+
+In this example, MRIO confirms that the `+roof-total-area` attribute was successfully added to 2 objects.
 
 After closing the dialog, the new attribute appears in the File Overview. In the supplied example, the overview shows a roof-area value such as `186.711` and indicates the number/percentage of objects carrying the attribute.
 
 ## 9. Add building volume
 
-Select **Add volume** and press `Enter`. MRIO calculates building volume and adds the `+building-volume` attribute to applicable objects.
+Select Add volume and press `Enter`. MRIO calculates the building volume and adds the `+building-volume` attribute to the applicable objects.
 
-![Add volume operation](images/mrfigure_16.png)
+```{image} images/mrfigure_16.png
+:width: 700px
+:align: center
+:alt: Add volume operation
+```
 
-*Figure 16: Add volume operation in the MRIO interface.*
+<p style="text-align: center;"><em>Figure 18: Add volume operation in MRIO.</em></p>
 
-![Add volume success](images/mrfigure_17.png)
+After the calculation is completed, MRIO displays a success message confirming that the `+building-volume` attribute has been added.
 
-*Figure 17: Successful volume calculation. MRIO reports that `+building-volume` was added to 2 objects.*
+```{image} images/mrfigure_17.png
+:width: 700px
+:align: center
+:alt: Successful volume calculation
+```
 
-The calculated attribute can then be inspected in the overview together with the other attributes.
+<p style="text-align: center;"><em>Figure 19: Successful building volume calculation.</em></p>
+
+In this example, MRIO confirms that the `+building-volume` attribute was successfully added to 2 objects. The calculated attribute can then be viewed in the File Overview panel together with the other attributes.
 
 ## 10. View all attributes
 
@@ -334,34 +413,44 @@ This is the easiest way to verify newly added, imported, renamed, or calculated 
 
 ### Delete an attribute
 
-Select **Delete attribute** and press `Enter`. MRIO opens a list of available attributes.
+Select Delete attribute and press `Enter`. MRIO opens a list of the available attributes that can be removed from the dataset.
 
-![Dataset before deleting an attribute](images/mrfigure_18.png)
+```{image} images/mrfigure_18.png
+:width: 700px
+:align: center
+:alt: Dataset before deleting an attribute
+```
 
-*Figure 18: File overview before deleting an attribute.*
+<p style="text-align: center;"><em>Figure 20: File overview before deleting an attribute.</em></p>
 
 Use `↑`/`↓` to choose the attribute that should be removed, then press `Enter`.
 
-![Remove Attribute dialog](images/mrfigure_19.png)
+```{image} images/mrfigure_19.png
+:width: 700px
+:align: center
+:alt: Remove Attribute dialog
+```
 
-*Figure 19: Remove Attribute dialog. The user selects the attribute to delete from the dataset.*
+<p style="text-align: center;"><em>Figure 21: Selecting an attribute to remove from the dataset.</em></p>
 
-In the tested workflow, `b3_h_dak_50p` was selected. MRIO subsequently reported that the attribute was removed from 2 objects. Deleting an attribute changes the in-memory dataset, so save the file afterward if the deletion should be kept.
+In this example, the attribute `b3_h_dak_50p` is selected for deletion. After confirming the selection, MRIO reports that the attribute was successfully removed from 2 objects.
+
+Deleting an attribute modifies the dataset currently loaded in MRIO. To keep this change, save the modified dataset afterward.
 
 ## 11. Save the modified file
 
-Choose **Save** from the Operations panel, or press `s` from the normal interface.
+Choose Save from the Operations panel, or press `s` from the normal interface.
 
 ![Save As dialog](images/mrfigure_20.png)
 
-*Figure 20: Save As dialog. The user can edit the output path and press `Tab` to toggle the output format.*
+*Figure 22: Save As dialog. The user can edit the output path and press `Tab` to toggle the output format.*
 
 The Save dialog contains two important settings:
 
 1. **Path** — the destination filename/path, for example `data/3dbag_b2.modified.city.json`.
 2. **Output format** — CityJSON or CityJSONSeq.
 
-Press `Tab` to toggle between **CityJSON** and **CityJSONSeq**. Make sure the chosen format and filename extension are consistent with the output you intend to create, then press `Enter` to confirm. A green success dialog indicates that the file was written successfully; press `Enter` again to close the message.
+Press `Tab` to toggle between CityJSON and CityJSONSeq. Make sure the chosen format and filename extension are consistent with the output you intend to create, then press `Enter` to confirm. A green success dialog indicates that the file was written successfully; press `Enter` again to close the message.
 
 ## 12. Running MRIO with Your Own File
 
@@ -392,8 +481,9 @@ opens.
 
 ### Running a Format Conversion
 
-MRIO can also be started with an output-format option. For example:
+MRIO supports both CityJSON and CityJSONSeq files. When starting MRIO, you can specify the format that should be used when the processed dataset is saved.
 
+For example, the following command opens a CityJSONSeq file and specifies CityJSON as the desired output format:
 ``` bash
 cargo run -p mrio-cli -- data/3dbag_b2.city.jsonl --output-format cityjson
 ```
