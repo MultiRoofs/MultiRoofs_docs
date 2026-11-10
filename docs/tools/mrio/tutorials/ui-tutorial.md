@@ -2,6 +2,7 @@
 
 ##  Introduction
 
+MRIO (MultiRoofs input/output) is a web tool for preparing, checking, and editing 3D building data. It is part of the MultiRoofs workflow.
 MRIO provides a terminal-based user interface (TUI) for inspecting and modifying CityJSON and CityJSONSeq datasets. It runs inside a terminal, most actions are selected from the Operations panel with the keyboard.
 
 This guide explains the complete workflow shown in the supplied screenshots: opening a dataset, navigating the interface, preparing a file for MultiRoofs, importing attributes from CSV, validating a file, renaming and deleting attributes, calculating roof area and building volume, reviewing attributes, and saving the result.
@@ -116,7 +117,7 @@ available and the computer is ready to build MRIO. If Windows reports
 that either command is not recognized, make sure installation completed
 successfully and that a new terminal was opened afterward.
 
-## 2. Open the MRIO Project Directory in the Terminal
+### Open the MRIO Project Directory in the Terminal
 
 The terminal must be located inside the MRIO project directory before running MRIO Cargo commands.
 
@@ -198,20 +199,10 @@ right.
 
 <p style="text-align: center;"><em>Figure 6: MRIO Terminal User Interface.</em></p>
 
-The Operations panel can include:
--   Prepare file for MultiRoofs
--   Import attributes from CSV
--   Validate file
--   Set CRS
--   Rename attribute
--   Delete attribute
--   Add roof area
--   Add volume
--   Save
+The <span style="color: #D32F2F; font-weight: 600;">Operations panel</span> , located on the left side of the interface, provides the tools needed to process and modify the uploaded file. Users can calculate roof surface areas and building volumes, delete or rename existing attributes, convert Roofer output into the MultiRoofs format, import additional attributes from CSV files, update the Coordinate Reference System (CRS),  and validate the dataset. The panel also includes a Download button to save the processed file and a Load different file button to upload another dataset.  The workflow is to first prepare the file for MultiRoofs and run validation. 
 
-The File Overview panel displays information about the loaded dataset, including the CityJSON version, Coordinate Reference System (CRS), extensions, number of objects, number of vertices, object types,
-and available attributes.
-
+The <span style="color: #D32F2F; font-weight: 600;">File Overview panel</span> ,  displays information about the loaded dataset, including the CityJSON version, Coordinate Reference System (CRS), extensions, number of objects, number of vertices, object types,
+and available attributes. The Object Types section displays the different types of objects contained in the dataset and their quantities. In this example, the file contains 2 Building objects and 2 BuildingPart objects. Buildings represent the main building entities, while BuildingParts represent individual parts of buildings that may contain their 3D geometry. Object Types separates Building and BuildingPart. A BuildingPart can hold the 3D roof/wall geometry while its parent Building holds descriptive information. Attributes are pieces of information attached to objects—for example construction year, roof type, or volume.
 ### Keyboard controls
 
 MRIO is keyboard-driven. The most important controls are:
@@ -226,7 +217,7 @@ MRIO is keyboard-driven. The most important controls are:
 | `s` | Open Save directly from the normal interface |
 | `q` | Quit; MRIO can warn about unsaved changes |
 
-## 4. Prepare a file for MultiRoofs
+## 4. Prepare a file for MultiRoofs workflow
 
 Select Prepare file for MultiRoofs with `↑`/`↓`, then press `Enter`.
 

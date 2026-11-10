@@ -8,7 +8,7 @@ It supports the inspection, modification, validation, and export of 3D building 
 For more information about its functionalities and supported file formats, see the Explanation section.
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 3
 
 tutorials/index
 explanation/index
