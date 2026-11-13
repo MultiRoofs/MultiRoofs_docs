@@ -78,7 +78,6 @@ from-priorities-to-action/index
 digital-twins/index
 training-path/index
 glossary/index
-references/index
 ```
 
 ```{toctree}
