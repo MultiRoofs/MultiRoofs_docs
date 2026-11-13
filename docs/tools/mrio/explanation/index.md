@@ -1,11 +1,4 @@
-<style>
-.bd-content p {
-    text-align: justify;
-    text-justify: inter-word;
-}
-</style>
-
-# Explanation
+# Background
 
 This section provides information about MRIO, including its main functionalities, underlying concepts, and the methods used to process and analyze building information. Users can access the [MRIO website](https://multiroofs.github.io/mrio/) to visualize and analyze 3D building models.
 
