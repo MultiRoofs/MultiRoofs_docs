@@ -1,3 +1,0 @@
-# Publications and resources
-
-TBD
