@@ -82,7 +82,7 @@ The displayed value of each attribute is just an example and does not necessaril
 Overall, this interface allows users to understand the structure and contents of their uploaded dataset before applying any modifications. Users can review the available building information, select the required processing operation, validate the results, and download the updated file for further use.
 
 (mrio-prepare-file)=
-## Prepare file for MultiRoofs
+## Preparing the 3D model for MultiRoofs
 
 The **Prepare file for MultiRoofs** operation converts the structure of the uploaded 3D building model into a format suitable for the MultiRoofs workflow. 
 
@@ -105,7 +105,8 @@ We recommend to validate the file both before and after preparation to ensure th
 ```
 
 (mrio-validate-file)=
-## Validate file
+## 3D model validation
+
 **Validate file** checks whether the 3D model follows important CityJSON structural rules. Use it before editing and again after any major operation. Green check marks indicate passed checks; red symbols identify findings that need review.
 
 ```{figure} ./images/figure_06.png
@@ -117,7 +118,7 @@ We recommend to validate the file both before and after preparation to ensure th
 Validation dialog
 ```
 
-## Import attributes from a CSV file
+## Importing attributes from a CSV file
 
 You can use this operation if you have an attribute that you want to add to your 3D model. A CSV file is a table in which each row represents a single CityObject. The first column must contain the exact ID of that CityObject. The remaining columns become new attributes. The ID column is used for matching, not copied as a new attribute. If you have a CSV file containing attributes that you want to add to your file, you need to follow these steps:
 
@@ -138,9 +139,9 @@ You can use this operation if you have an attribute that you want to add to your
 Importing new attributes from a CSV file
 ```
 
-## Rename or delete attributes
+## Managing attributes
 
-### Rename attribute
+### Renaming an attribute
 
 Click **Rename attribute** to rename an attribute in your 3D model. First, you need to select the attribute you want to rename and then enter a new name. Click on **Rename** to save the new name.  try to use meaningful name.
 
@@ -157,7 +158,7 @@ Click **Rename attribute** to rename an attribute in your 3D model. First, you n
 Pick a name your future self will thank you for."attr1" helps no one.
 ```
 
-### Delete attribute
+### Deletign an attribute
 
 Click **Delete attribute** to remove and existing attribute in your 3D model. First, choose the attribute to be removed, and then confirm its deletion by clicking on **Delete**. 
 
@@ -175,7 +176,7 @@ Click **Delete attribute** to remove and existing attribute in your 3D model. Fi
 Once it's gone, it's gone. Double-check before you confirm.
 ```
 
-## Add roof area and building volume
+## Adding attributes roof area and building volume
 
 The functionality **Add roof area** calculates roof surface information and stores it as an attribute (**+roof-total-area** in {numref}`fig-web-mrio-add-attribute`). Similarly, the **Add volume** functionality add a new attribute representing the volume of each object. 
 
@@ -188,7 +189,7 @@ The functionality **Add roof area** calculates roof surface information and stor
 Attribute **+roof-total-area** added with the roof area.
 ```
 
-## Set CRS
+## Setting the Coordinate Reference System (CRS)
 
 The Coordinate Reference System (CRS) describes how coordinates relate to locations on Earth. Click **Set CRS**, enter the intended EPSG code, and confirm. For example, EPSG:28992 is used for the Dutch national coordinate system. This feature changes the CRS identifier in the metadata; it does not reproject the coordinate values. Only set a code that correctly describes the coordinates already in your file.
 
@@ -202,7 +203,7 @@ The Coordinate Reference System (CRS) describes how coordinates relate to locati
 Set EPSG Code dialog
 ```
 
-## Download the 3D model
+## Downloading the 3D model
 
 The following steps describes how to download the resulting 3D model after performing some of the functionalities described above.
 
