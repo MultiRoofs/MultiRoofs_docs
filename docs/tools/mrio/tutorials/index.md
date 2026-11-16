@@ -9,6 +9,7 @@ This section provides step-by-step tutorials for working with MRIO. The followin
 ```{toctree}
 :maxdepth: 1
 
+install-cli
 website-tutorial
 ui-tutorial
 ```

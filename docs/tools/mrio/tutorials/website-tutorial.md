@@ -1,6 +1,6 @@
 # Web-based MRIO
 
-This tutorial provides step-by-step instructions to help users understand how to interact with the [web-based MRIO](https://multiroofs.github.io/mrio/) and use its main functionalities. It explains how to upload CityJSON or CityJSONSeq files, inspect building information, prepare datasets for the MultiRoofs workflow, validate files, manage building attributes, calculate roof areas and building volumes, and download the processed results. {numref}`fig-web-mrio-welcome` below illustrates the web-based MRIO welcome page.
+This tutorial provides a guide to help users understand how to interact with the [web-based MRIO](https://multiroofs.github.io/mrio/) and use its main functionalities. It explains how to upload CityJSON or CityJSONSeq files, inspect building information, prepare datasets for the MultiRoofs workflow, validate files, manage building attributes, calculate roof areas and building volumes, and download the processed results. {numref}`fig-web-mrio-welcome` below illustrates the web-based MRIO welcome page.
 
 
 ```{figure} ./images/figure_01.png
@@ -14,9 +14,12 @@ The web-based MRIO welcome page.
 
 ## What you need
 
-TBC
+- A stable Internet conexion to access the web-based MRIO
+- A CityJSON (`.city.json`) or CityJSONSeq (`.city.jsonl`) file. If you don't have one, you can use the example file `3dbag_b2.city.json`, included in the `data`
+  folder of the MRIO project.
 
-%TODO: Add what you will need to try this tutorial. If possible, include a sample file that users can use right away. See how I did it in the MultiRoofs Builder tutorials
+% TODO: complete the requirements and, if possible, provide a downloadable sample
+% file and CSV file, as in the MultiRoofs Builder tutorials.
 
 ## Uploading your data
 
@@ -158,9 +161,9 @@ Click **Rename attribute** to rename an attribute in your 3D model. First, you n
 Pick a name your future self will thank you for."attr1" helps no one.
 ```
 
-### Deletign an attribute
+### Deleting an attribute
 
-Click **Delete attribute** to remove and existing attribute in your 3D model. First, choose the attribute to be removed, and then confirm its deletion by clicking on **Delete**. 
+Click **Delete attribute** to remove an existing attribute in your 3D model. First, choose the attribute to be removed, and then confirm its deletion by clicking on **Delete**. 
 
 ```{figure} ./images/figure_08.png
 :width: 600px
