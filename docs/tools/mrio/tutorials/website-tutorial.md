@@ -1,215 +1,233 @@
+# Web-based MRIO
+
+This tutorial provides step-by-step instructions to help users understand how to interact with the [web-based MRIO](https://multiroofs.github.io/mrio/) and use its main functionalities. It explains how to upload CityJSON or CityJSONSeq files, inspect building information, prepare datasets for the MultiRoofs workflow, validate files, manage building attributes, calculate roof areas and building volumes, and download the processed results. {numref}`fig-web-mrio-welcome` below illustrates the web-based MRIO welcome page.
 
 
-<div style="text-align: justify;">
-
-# Website Tutorial
-This tutorial provides step-by-step instructions to help users understand how to interact with the [MRIO website](https://multiroofs.github.io/mrio/) and use its main functionalities. It explains how to upload CityJSON or CityJSONSeq files, inspect building information, prepare datasets for the MultiRoofs workflow, validate files, manage building attributes, calculate roof areas and building volumes, and download the processed results. 
-
-## 1. Introduction: What is MRIO?
-
-[MRIO](https://multiroofs.github.io/mrio/) (MultiRoofs input/output) is a web tool for preparing, checking, and editing 3D building data. It is part of the MultiRoofs workflow. Instead of opening a complex JSON file and editing it by hand, you can use buttons and simple dialogs to manage building information.
- Figure 1 below illustrates the MRIO welcome page.
-
-
-```{image} images/figure_01.png
+```{figure} ./images/figure_01.png
+:alt: Web-based MRIO welcome page
 :width: 400px
 :align: center
-:alt: MRIO welcome page
+:name: fig-web-mrio-welcome
+
+The web-based MRIO welcome page.
 ```
 
-<p style="text-align: center;"><em>Figure 1: The MRIO welcome page. Use Browse files or drag and drop a supported model.</em></p>
+## What you need
 
+TBC
 
-## 2. Upload your file
+%TODO: Add what you will need to try this tutorial. If possible, include a sample file that users can use right away. See how I did it in the MultiRoofs Builder tutorials
+
+## Uploading your data
 
 1. Open the [MRIO website](https://multiroofs.github.io/mrio/).
 
-2. Click Browse files and select a .city.json or .city.jsonl file, or drag it onto the upload area. As shown in Figure 2 below
+2. Click **Browse files** and select a *.city.json* or *.city.jsonl* file, or drag it onto the upload area. 
 
 
-```{image} images/figure_02.png
+```{figure} ./images/figure_02.png
 :width: 600px
 :align: center
 :alt: Upload a CityJSON or CityJSONSeq file
+:name: fig-web-mrio-upload
+
+Upload the CityJSON or CityJSONSeq file.
 ```
 
-<p style="text-align: center;"><em>Figure 2: Upload the CityJSON or CityJSONSeq file.</em></p>
+3. Wait for the **File Overview** to appear. Check that the format, number of objects, vertices, and CRS are shown.
 
+```{note}
+If the data in the **File Overview** and **Attributes** sections of your website differ from what is shown in the screenshot, it is because you uploaded a different type of file containing different data.
+```
 
-3. Wait for the File Overview to appear. Check that the format, number of objects, vertices, and CRS are shown. Note: If you notice that the data in the File Overview and Attributes sections of your website differ from what is shown in the screenshot, it is because you uploaded a different type of file containing different data.
-
-```{image} images/figure_03.png
+```{figure} ./images/figure_03.png
 :width: 700px
 :align: center
 :alt: File Overview after uploading
+:name: fig-web-mrio-overview
+
+File Overview after uploading.
 ```
-<p style="text-align: center;"><em>Figure 3: File Overview after uploading.</em></p>
 
+## Understanding the main workspace
 
+After uploading a CityJSON or CityJSONSeq file, the web-based MRIO displays the main interface as shown in {numref}`fig-web-mrio-main` below, which is divided into two sections: the **Operations** panel on the left-hand side and the **File Overview** panel and the **Attributes** section in the right-hand side of the screen.
 
-## 3. Understanding the main workspace
-
-After uploading a CityJSON or CityJSONSeq file, MRIO displays the main interface as shown in Figure 4 below, which is divided into two sections: the Operations panel on the left,  the File Overview panel in the center and the Attributes section.
-
-
-```{image} images/figure_04.png
+```{figure} ./images/figure_04.png
 :width: 700px
 :align: center
-:alt: MRIO main workspace
+:alt: Web-based MRIO main workspace
+:name: fig-web-mrio-main
+
+The main workspace, showing the **Operations** panel on the left-hand side and the **File Overview** panel and the **Attributes** section in the right-hand side of the screen.
 ```
-<p style="text-align: center;"><em>Figure 4: The main workspace, showing the Operations panel on the left and the File Overview panel on the right.</em></p>
 
 
-The <span style="color: #D32F2F; font-weight: 600;">Operations panel</span> , located on the left side of the interface, provides the tools needed to process and modify the uploaded file. Users can calculate roof surface areas and building volumes, delete or rename existing attributes, convert Roofer output into the MultiRoofs format, import additional attributes from CSV files, update the Coordinate Reference System (CRS),  and validate the dataset. The panel also includes a Download button to save the processed file and a Load different file button to upload another dataset.  The workflow is to first prepare the file for MultiRoofs and run validation. 
+The **Operations** panel provides the functionalities for processing and modifying the uploaded file. Users can calculate roof surface areas and building volumes, delete or rename existing attributes, convert Roofer output into the MultiRoofs format, import additional attributes from CSV files, update the Coordinate Reference System (CRS),  and validate the dataset. The panel also includes a **Download** button to save the processed file and a **Load different file** button to upload another dataset. The workflow is to first prepare the file for MultiRoofs and run validation. 
 
-The <span style="color: #D32F2F; font-weight: 600;">File Overview panel</span> , displayed in the main area of the interface, provides a summary of the uploaded dataset. At the top, four information boxes show the file format, total number of City Objects, number of vertices, and Coordinate Reference System (CRS). In the example shown in the figure, the uploaded file is in CityJSON version 2.0 format and contains 4 CityObjects, 127 vertices, and a CRS identified by EPSG code 7415. FORMAT tells you whether the model is CityJSON or CityJSONSeq. OBJECTS is the number of CityObjects (not necessarily the number of buildings). VERTICES are the coordinate points used to describe geometry. CRS is the coordinate reference system code, such as EPSG:28992.
-Below these boxes, the Object Types section displays the different types of objects contained in the dataset and their quantities. In this example, the file contains 2 Building objects and 2 BuildingPart objects. Buildings represent the main building entities, while BuildingParts represent individual parts of buildings that may contain their 3D geometry. Object Types separates Building and BuildingPart. A BuildingPart can hold the 3D roof/wall geometry while its parent Building holds descriptive information. Attributes are pieces of information attached to objects—for example construction year, roof type, or volume.
+```{note}
+Once the data has been uploaded, we recommend to first prepare the file for MultiRoofs by clicking on the button **Prepare file for MultiRoofs** (see {ref}`mrio-prepare-file`) and then validating the output with **Validate file** button (see {ref}`mrio-validate-file`).
+```
 
-The <span style="color: #D32F2F; font-weight: 600;">The Attributes section</span>, located below Object Types, lists the available attributes associated with the CityObjects. These attributes describe building characteristics such as roof type, roof height, ground elevation, and other properties. Each row displays the attribute name, an example value, and the number and percentage of CityObjects containing that attribute. For example, the attribute b3_dak_type has the displayed value slanted, while 2 (50%) indicates that 2 out of the 4 CityObjects contain this attribute. The displayed value is an example and does not necessarily represent the value for every object.
+The **File Overview** panel provides a summary of the uploaded dataset. At the top, four information boxes show the file format, total number of City Objects, number of vertices, and Coordinate Reference System (CRS). In the example shown in {numref}`fig-web-mrio-main`, the uploaded file is in CityJSON version 2.0 format (**FORMAT** field) and contains 4 CityObjects (**OBJECTS** field, not necessarily the number of buildings), 127 vertices (**VERTICES** field as the number of coordinate points used to describe objects' geometry), and a CRS identified by EPSG code 7415 (**CRS** field). 
+
+Below these boxes, the **Object Types** section displays the different types of objects contained in the dataset and their quantities. In this example, the file contains 2 Building objects and 2 BuildingPart objects. Buildings represent the main building entities, while BuildingParts represent individual parts of buildings that may contain their 3D geometry. A BuildingPart can hold the 3D roof/wall geometry while its parent Building holds descriptive information. Each of these objects has a set of attributes representing pieces of information attached to them, for example construction year, roof type, or volume.
+
+The **Attributes** section lists the available attributes associated with the CityObjects. Each row displays the attribute name, an example value (from the uploaded data), and the number and percentage of CityObjects containing that attribute. For example, the attribute **b3_dak_type** has the displayed value *slanted*, while *2 (50%)* indicates that 2 out of the 4 CityObjects contain this attribute, representing 50% of the CityObjects in the dataset. 
+
+```{note}
+The displayed value of each attribute is just an example and does not necessarily represent the value for every object.
+```
 
 Overall, this interface allows users to understand the structure and contents of their uploaded dataset before applying any modifications. Users can review the available building information, select the required processing operation, validate the results, and download the updated file for further use.
 
-## 4. Prepare file for MultiRoofs
- <strong style="color: #087445;"> The recommended workflow </strong> is to first prepare the uploaded file for MultiRoofs by clicking the Prepare file for MultiRoofs button, followed by running the Validate file operation to check the resulting data structure and identify any potential errors. However, validation can also be performed before preparing the file to assess the original dataset and identify existing issues. It is recommended to validate the file both before and after preparation to ensure that the processing has been completed correctly.
-The "Prepare file for MultiRoofs" operation is especially useful MRIO converts the structure of the uploaded 3D building model into a format suitable for the MultiRoofs workflow. In the illustrated example, the uploaded CityJSON file contains 4 objects, consisting of 2 Buildings and 2 BuildingParts. The file also contains 127 vertices and uses coordinate reference system (CRS) 7415.
+(mrio-prepare-file)=
+## Prepare file for MultiRoofs
 
-1. From the operations section on the left, click "Prepare file for MultiRoofs".
+The **Prepare file for MultiRoofs** operation converts the structure of the uploaded 3D building model into a format suitable for the MultiRoofs workflow. 
 
-2. Read the success message and compare the Object Types and total object count. In these steps, the MultiRoof extension will be added to the website, confirming that the file has been converted to the MultiRoof workflow.
+%TODO: add extra information obtained from Hugo regarding issue 6 in Github
 
-3. Optionally - click "Validate file" in the operations section to check the resulting structure.
+Once the data has been prepared using this functionality, read the success message and compare the Object Types and total object count. Here, the MultiRoof extension will be added to the website, confirming that the file has been converted to MultiRoof successfully.
 
-
-```{image} images/figure_05.png
+```{figure} ./images/figure_05.png
 :width: 600px
 :align: center
-:alt: File after preparation for MultiRoofs
+:alt: Data after preparation for MultiRoofs
+:name: fig-web-mrio-prepare-file
+
+After preparation, BuildingParts are merged into their Buildings, and Building objects remain.
 ```
-<p style="text-align: center;"><em>Figure 5: After preparation, BuildingParts are merged into their Buildings, and Building objects remain.</em></p>
 
+```{admonition} Warning
+:class: important
+We recommend to validate the file both before and after preparation to ensure that the processing has been completed correctly.
+```
 
-## 5. Validate file
-Validation checks whether the model follows important CityJSON structural rules. Use it before editing and again after any major operation. Green check marks indicate passed checks; red symbols identify findings that need review.
+(mrio-validate-file)=
+## Validate file
+**Validate file** checks whether the 3D model follows important CityJSON structural rules. Use it before editing and again after any major operation. Green check marks indicate passed checks; red symbols identify findings that need review.
 
-
-
-```{image} images/figure_06.png
+```{figure} ./images/figure_06.png
 :width: 500px
 :align: center
 :alt: MRIO validation dialog
+:name: fig-web-mrio-validation
+
+Validation dialog
 ```
-<p style="text-align: center;"><em>Figure 6: Validation dialog.</em></p>
 
+## Import attributes from a CSV file
 
-## 6. Import attributes from a CSV file (optional)
-This operation is optional. You can use it if you have an attribute that you want to add to your file. A CSV is table, Each row represents one CityObject, and its first column must contain that object’s exact ID. The remaining columns become new attributes. The ID column is used for matching, not copied as a new attribute.
+You can use this operation if you have an attribute that you want to add to your 3D model. A CSV file is a table in which each row represents a single CityObject. The first column must contain the exact ID of that CityObject. The remaining columns become new attributes. The ID column is used for matching, not copied as a new attribute. If you have a CSV file containing attributes that you want to add to your file, you need to follow these steps:
 
-The Add Attributes from CSV dialog contains a Choose File, a Cancel button, and an Add attributes button.
-If you have a CSV file containing attributes that you want to add to your file, you need to follow these steps:
-1. Click Import attributes from CSV.
+1. Click on **Import attributes from CSV**.
 
 2. Choose a CSV file with matching CityObject IDs in the first column.
 
-3. Click Add attributes and check the results in the Attributes section.
+3. Click **Add attributes** and check the results in the **Attributes** section.
 
-4. Validate the file after importing.
+4. Validate the file after importing (see {ref}`mrio-validate-file`).
 
-```{image} images/figure_6csv.png
+```{figure} ./images/figure_6csv.png
 :width: 600px
 :align: center
 :alt: Import attributes from a CSV file
+:name: fig-web-mrio-import-csv
+
+Importing new attributes from a CSV file
 ```
-<p style="text-align: center;"><em>Figure 7: Steps to Add Attributes from a CSV file.</em></p>
 
-
-
-## 8. Rename or delete attributes
+## Rename or delete attributes
 
 ### Rename attribute
 
-Click Rename attribute, select the existing attribute name, enter a new name, and click Rename. This changes the attribute key rather than its value try to use meaningful name.
+Click **Rename attribute** to rename an attribute in your 3D model. First, you need to select the attribute you want to rename and then enter a new name. Click on **Rename** to save the new name.  try to use meaningful name.
 
-```{image} images/figure_07.png
+```{figure} ./images/figure_07.png
 :width: 600px
 :align: center
 :alt: Rename Attribute dialog
+:name: fig-web-mrio-rename
+
+**Rename Attribute** dialog: select an existing attribute and type its new name.
 ```
-<p style="text-align: center;"><em>Figure 8: Rename Attribute dialog: select an existing name and type its replacement.</em></p>
 
-
+```{note}
+Pick a name your future self will thank you for."attr1" helps no one.
+```
 
 ### Delete attribute
 
-Click Delete attribute, choose the attribute to remove, and confirm with Delete. The chosen attribute is removed from the relevant CityObjects, so check carefully before confirming.
+Click **Delete attribute** to remove and existing attribute in your 3D model. First, choose the attribute to be removed, and then confirm its deletion by clicking on **Delete**. 
 
-
-```{image} images/figure_08.png
+```{figure} ./images/figure_08.png
 :width: 600px
 :align: center
 :alt: Delete Attribute dialog
+:name: fig-web-mrio-delete
+
+**Delete Attribute** dialog.
 ```
-<p style="text-align: center;"><em>Figure 9: Delete Attribute dialog.</em></p>
-The important change is:
 
+```{admonition} Warning
+:class: important
+Once it's gone, it's gone. Double-check before you confirm.
+```
 
+## Add roof area and building volume
 
-## 9. Add roof area and building volume
+The functionality **Add roof area** calculates roof surface information and stores it as an attribute (**+roof-total-area** in {numref}`fig-web-mrio-add-attribute`). Similarly, the **Add volume** functionality add a new attribute representing the volume of each object. 
 
-Add roof area calculates roof surface information and stores it as an attribute. Add volume calculates building volume information. 
-
-### What does +roof-total-area mean?
-
-As shown in the figure below in the attribute section. The +roof-total-area attribute represents the calculated total area of a building's roof surfaces, rather than the height of the roof. The File Overview displays an example numeric value for this attribute, along with the number and percentage of buildings that contain it. In the illustrated example, the attribute has a displayed value of 186.711, and 2 out of 2 Buildings (100%) contain the +roof-total-area attribute.
-
-
-```{image} images/figure_09.png
+```{figure} ./images/figure_09.png
 :width: 600px
 :align: center
-:alt: adding Attribute dialog
+:alt: Result of adding the roof area attribute
+:name: fig-web-mrio-add-attribute
+
+Attribute **+roof-total-area** added with the roof area.
 ```
-<p style="text-align: center;"><em>Figure 10: Adding "calculating" the roof area.</em></p>
+
+## Set CRS
+
+The Coordinate Reference System (CRS) describes how coordinates relate to locations on Earth. Click **Set CRS**, enter the intended EPSG code, and confirm. For example, EPSG:28992 is used for the Dutch national coordinate system. This feature changes the CRS identifier in the metadata; it does not reproject the coordinate values. Only set a code that correctly describes the coordinates already in your file.
 
 
-## 7. Set CRS – optional
-
-The Coordinate Reference System (CRS) describes how coordinates relate to locations on Earth. Click Set CRS, enter the intended EPSG code, and confirm. For example, EPSG:28992 is used for the Dutch national coordinate system. This feature changes the CRS identifier in the metadata; it does not reproject the coordinate values. Only set a code that correctly describes the coordinates already in your file.
-
-
-```{image} images/figure_10.png
+```{figure} ./images/figure_10.png
 :width: 500px
 :align: center
 :alt: Set EPSG Code dialog
+:name: fig-web-mrio-epsg
+
+Set EPSG Code dialog
 ```
-<p style="text-align: center;"><em>Figure 11: Set EPSG Code dialog.</em></p>
 
+## Download the 3D model
 
-## 10. Download the file
+The following steps describes how to download the resulting 3D model after performing some of the functionalities described above.
 
-1. Click Download in the Operations panel.
+1. Click **Download** in the **Operations** panel.
 
 2. Select CityJSON or CityJSONSeq, depending on the type of your original file.
 
 3. Check the filename and extension: .city.json for CityJSON, .city.jsonl for CityJSONSeq.
 
-4. Click Download, then reopen the saved file in MRIO or another compatible viewer to verify it.
+4. Click **Download**, then reopen the saved file in MRIO or another compatible viewer to verify that was correctly downloaded.
 
- <strong style="color: #0b8b25;"> Important Note! </strong> when downloading the processed file, make sure to select the correct output format in the Download File window. If your file is in CityJSON format (.city.json), select CityJSON. If your file is in CityJSONSeq format (.city.jsonl), select CityJSONSeq. The selected format should match the file type you intend to use. You can also modify the filename before downloading, always select the appropriate output format and ensure that the filename extension matches the selected format before clicking Download. Once the format and filename have been verified, click the Download button to save the processed file to your computer.
+{numref}`fig-web-mrio-download` shows an example where the file is in CityJSON format (.city.json). Therefore, the **CityJSON** option should be selected when the model is downloaded. Alternatively, if your 3D model is in CityJSONSeq format (.city.jsonl), the option **CityJSONSeq** should be selected.
 
- In the illustrated example in Figure 12, the file is in CityJSON format (.city.json). Therefore, the CityJSON option is selected, while the CityJSONSeq option is marked with a red cross <strong style="color: #f31313;"> ✗ </strong>  because it is not required.
-However, if your file is in CityJSONSeq format (.city.jsonl), the second option (CityJSONSeq) should be selected instead of the first option (CityJSON).
-
-```{image} images/figure_11_cityjson.png
+```{figure} ./images/figure_11_cityjson.png
 :width: 500px
 :align: center
 :alt: Download file based on selected format
+:name: fig-web-mrio-download
+
+Download the file based on the selected output format.
 ```
-<p style="text-align: center;"><em>Figure 12: Download the file based on the selected output format.</em></p>
 
+```{admonition} Warning
+:class: important
 
-> Note: If you want to download the file in CityJSON format instead of CityJSONSeq, you must select CityJSON as the output format and manually remove the letter “l” from the filename extension, changing .city.jsonl to .city.json.
-
-</div>
-
-```{toctree}
-:maxdepth: 1
+When downloading the processed 3D model, make sure to select the correct output format in the **Download File** window. If your file is in CityJSON format (.city.json), select CityJSON. If your file is in CityJSONSeq format (.city.jsonl), select CityJSONSeq. The selected format should match the file type you intend to use. You can also modify the filename before downloading. 
 ```
+
