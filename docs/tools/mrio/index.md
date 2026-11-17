@@ -1,19 +1,16 @@
 # MRIO
 
-**mapview** is an in-house TypeScript library that draws building footprints on a web map.
+MRIO (MultiRoofs Input/Output) is a tool developed as part of the MultiRoofs project and counts with a web-based application that doesn't need any additional tool installed in your computer, and CLI-based tool to handle large files.
 
-| | |
-|---|---|
-| Repository | `https://github.com/your-org/mapview` |
-| Install | `npm install @your-org/mapview` |
-| Documented version | 2.1.0 |
-| API reference | Pasted TypeDoc HTML (see [Reference](reference/index.md)) |
+Both support the inspection, modification, validation, and export of 3D building models stored in CityJSON and CityJSONSeq formats.
+
+For more information about its functionalities and supported file formats, see the [Background section](./explanation/index.md).
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 3
 
+explanation/index
 tutorials/index
 how-to/index
-explanation/index
-reference/index
-```
+
+

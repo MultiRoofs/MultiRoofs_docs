@@ -5,5 +5,5 @@ Recipes for specific tasks.
 ```{toctree}
 :maxdepth: 1
 
-footprint-area
+import_csv
 ```
