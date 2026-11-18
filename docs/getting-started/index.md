@@ -42,7 +42,7 @@ Unfamiliar with a term? Check the [Glossary](../glossary/index.md).
 | Tool | What it does | Input | Output | Supports |
 |---|---|---|---|---|
 | [MultiRoofs Builder](../tools/CityJSON/index.md) | Generates 3D building models | LiDAR point cloud, building footprints | CityJSON city model | What rooftops **can** offer |
-| [MRIO](../tools/mrio/index.md) | % TODO | % TODO | % TODO | % TODO |
+| [MRIO](../tools/mrio/index.md) | Prepares, validates and enriches 3D building models for MultiRoofs | CityJSON or CityJSONSeq city model, optional CSV with building attributes | MultiRoofs-compliant CityJSON or CityJSONSeq city model | What rooftops **can** offer |
 | [Roofy](../tools/roofy/index.md) | % TODO | % TODO | % TODO | % TODO |
 | [Urban Challenges assessment](../tools/challenge_assessment/index.md) | % TODO | % TODO | % TODO | What the city **needs** |
 
@@ -80,8 +80,7 @@ Each tool has its own license, which is stated in the corresponding tool section
 
 **This documentation**
 
-> MultiRoofs project partners (2026). *MultiRoofs Documentation*.
-> https://multiroofs.github.io/MultiRoofs_docs/
+> MultiRoofs project partners (2026). *MultiRoofs Documentation* https://multiroofs.github.io/MultiRoofs_docs/
 
 **The MultiRoofs project**
 
@@ -94,8 +93,7 @@ Each tool has its own license, which is stated in the corresponding tool section
 > (version 2.1.0). https://w3id.org/rooftop_activation/2.1.0
 
 For BibTeX and other formats, use **Cite this repository** on the
-[GitHub repository](https://github.com/MultiRoofs/MultiRoofs_docs). Project
-publications are listed in [References and further reading](../references/index.md).
+[GitHub repository](https://github.com/MultiRoofs/MultiRoofs_docs).
 
 ## Getting help
 
