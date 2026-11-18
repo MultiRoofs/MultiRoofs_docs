@@ -75,7 +75,6 @@ owners-and-incentives/index
 digital-twins/index
 training-path/index
 glossary/index
-references/index
 ```
 
 ```{toctree}
