@@ -29,16 +29,16 @@ Adding or updating a tool? See [Contributing to these docs](contributing/index.m
 In-house Python library and user guide to extract a 3D model of buildings given LiDAR cloud of points
 and building footprints.
 +++
-{bdg-secondary}`Python, Roofer`
+{bdg-primary}`in-house` {bdg-primary}`third-party` {bdg-secondary}`Python` {bdg-secondary}`Roofer`
 :::
 
 :::{grid-item-card} MRIO
 :link: tools/mrio/index
 :link-type: doc
 
-description
+Inspect, edit, validate and export CityJSON and CityJSONSeq building models, either in the browser with no installation or with a command-line tool for large files.
 +++
-{bdg-primary}`in-house` {bdg-secondary}`TypeScript` {bdg-light}`pasted reference`
+{bdg-primary}`in-house` {bdg-secondary}`Rust` {bdg-secondary}`WebAssembly`
 :::
 
 :::{grid-item-card} Roofy
@@ -47,7 +47,7 @@ description
 
 description
 +++
-{bdg-primary}`in-house` {bdg-secondary}`web service` {bdg-light}`linked reference`
+{bdg-primary}`in-house` {bdg-secondary}`web service`
 :::
 
 :::{grid-item-card} Urban Challenges assessment
@@ -56,7 +56,7 @@ description
 
 description
 +++
-{bdg-warning}`third-party` {bdg-light}`linked reference`
+{bdg-warning}`in-house`
 :::
 ::::
 

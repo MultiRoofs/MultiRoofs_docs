@@ -80,7 +80,7 @@ Each tool has its own license, which is stated in the corresponding tool section
 
 **This documentation**
 
-> MultiRoofs project partners (2026). *MultiRoofs Documentation* (version X.Y).
+> MultiRoofs project partners (2026). *MultiRoofs Documentation*.
 > https://multiroofs.github.io/MultiRoofs_docs/
 
 **The MultiRoofs project**

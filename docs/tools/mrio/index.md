@@ -6,6 +6,12 @@ Both support the inspection, modification, validation, and export of 3D building
 
 For more information about its functionalities and supported file formats, see the [Background section](./explanation/index.md).
 
+| | |
+|---|---|
+| Source | `https://github.com/MultiRoofs/mrio` |
+| Releases | `https://github.com/MultiRoofs/mrio/releases` |
+
+
 ```{toctree}
 :maxdepth: 3
 
