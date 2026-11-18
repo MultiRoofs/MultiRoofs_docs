@@ -1,5 +1,6 @@
 # Installing dependencies
 
+(installing-roofer)=
 ## Installing Roofer
 
 **Roofer** performs fully automatic LoD2.2 building reconstruction from a classified point cloud
@@ -129,3 +130,78 @@ For more details, see the [Roofer installation guide](https://innovation.3dbag.n
 ```
 
 If the cjseq's usage is displayed, the installation has been successful. 
+
+(installing-uicityjson)=
+## Installing the LoD 2.2 CityJSON Generator
+
+The LoD 2.2 CityJSON Generator is distributed as a ready-to-use application for Windows and Linux. It does not require Python or any other package, only Roofer (see {ref}`installing-roofer`).
+
+### Windows
+
+1. Go to the [MultiRoofs CityJSON Generator releases page](https://github.com/MultiRoofs/UIcityJSON/releases) and download
+   `MultiRoofs_CityJSON_Setup.exe` from the latest release.
+2. Double-click `MultiRoofs_CityJSON_Setup.exe` and follow the steps of the installer.
+
+3. Start **MultiRoofs** from the Start menu.
+
+### Linux
+
+These instructions have been tested on Ubuntu 24.04.5 LTS. You can install the application, or run it directly from an AppImage without installing it.
+
+#### Option 1: Install the application
+
+1. Go to the [MultiRoofs CityJSON Generator releases page](https://github.com/MultiRoofs/UIcityJSON/releases) and download
+   `MultiRoofs-linux-x86_64.tar.gz` from the latest release.
+2. Open a **Terminal** in the folder where you saved the file, then extract it and run the installer:
+
+```
+   tar -xzf MultiRoofs-linux-x86_64.tar.gz
+   cd MultiRoofs-linux-x86_64
+   ./install_multiroofs.sh
+```
+
+   By default, the application is installed for the current user only, and no root privileges are needed. To install it for all users of the computer, run instead:
+
+```
+   sudo ./install_multiroofs.sh --system
+```
+
+| | User installation (default) | System installation |
+|---|---|---|
+| Root needed | No | Yes |
+| Application files | `~/.local/share/multiroofs` | `/opt/multiroofs` |
+| Command | `~/.local/bin/multiroofs` | `/usr/local/bin/multiroofs` |
+| Menu entry | `~/.local/share/applications` | `/usr/local/share/applications` |
+
+3. Start **MultiRoofs** from the application menu, or run `multiroofs` in a terminal.
+
+```{note}
+If the `multiroofs` command is not found right after a user installation, log out and back in. Ubuntu adds `~/.local/bin` to the `PATH` at login once the folder exists. The menu entry works immediately.
+```
+
+To update the application, run the installer of the new version. To uninstall it, run:
+
+```
+   ./install_multiroofs.sh --uninstall
+```
+
+For a system installation, use `sudo ./install_multiroofs.sh --system --uninstall`.
+
+#### Option 2: Run the AppImage
+
+1. Go to the [MultiRoofs CityJSON Generator releases page](https://github.com/MultiRoofs/UIcityJSON/releases) and download
+   `MultiRoofs-x86_64.AppImage` from the latest release.
+2. Make it executable and start it:
+
+```
+   chmod +x MultiRoofs-x86_64.AppImage
+   ./MultiRoofs-x86_64.AppImage
+```
+
+```{note}
+Some AppImages need FUSE 2, which Ubuntu 24.04 does not install by default. If the AppImage fails with a FUSE error, either install it with `sudo apt install libfuse2t64`, or run the AppImage with `./MultiRoofs-x86_64.AppImage --appimage-extract-and-run`.
+```
+
+### Running from the source code
+
+If you prefer not to install the application, you can run it from its source code with Python 3.11 or later. See the README of the [MultiRoofs CityJSON Generator repository](https://github.com/MultiRoofs/UIcityJSON/blob/main/README.md).

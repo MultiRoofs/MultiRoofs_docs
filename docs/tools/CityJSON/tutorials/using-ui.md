@@ -16,7 +16,7 @@ The workflow has six steps:
 6. Check the result in a web viewer.
 
 ```{note}
-This tools has been tested on Windows 11 and Ubuntu 14.04
+This tools has been tested on Windows 11 and Ubuntu 24.04.5. The source code is available in [Github](https://github.com/MultiRoofs/UIcityJSON)
 ```
 
 ## What you need
@@ -24,7 +24,7 @@ This tools has been tested on Windows 11 and Ubuntu 14.04
 - A classified point cloud in LAS or LAZ format, with at least the classes Ground (2) and Building (6).
 - Building footprints in GeoPackage format (`.gpkg`), with one unique identifier per building.
 - Roofer v1.0.0 or later.
-- The MultiRoofs LoD 2.2 CityJSON Generator. <!-- TODO: add download link -->
+- The MultiRoofs LoD 2.2 [CityJSON Generator](https://github.com/MultiRoofs/UIcityJSON/releases).
 - A web browser, to view the result.
 
 ## Step 1: Install Roofer and the application
