@@ -91,7 +91,7 @@ These solutions are tested in six pilot actions and then shared through a traini
 :alt: A diagram showing the MultiRoofs tools developed in the consortium.
 :width: 80%
 :align: center
-:name: fig-mrtools
+:name: fig-mrtools-about
 
 Set of tools developed in MultiRoofs (*work in progress*).
 ```
@@ -135,4 +135,3 @@ The MultiRoofs approach is designed for urban planners and programme managers, a
 ## Learn more
 
 - Project website and news: <https://multiroofs.nweurope.eu/>
-- Project deliverables and publications: see [References and further reading](../references/index.md).
