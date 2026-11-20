@@ -1,18 +1,10 @@
 # Roofy
 
-The **Inventory API** is an in-house REST service that stores and queries inventory items.
-
-| | |
-|---|---|
-| Repository | `https://github.com/your-org/inventory-api` |
-| Base URL | `https://inventory.example.com/v1` |
-| API reference | Published by the service (see [Reference](reference/index.md)) |
+Roofy is an interactive web application for visualizing, exploring, and analyzing 3D city and building data, with a particular focus on buildings and their roof surfaces.
 
 ```{toctree}
 :maxdepth: 2
 
 tutorials/index
-how-to/index
 explanation/index
-reference/index
 ```
