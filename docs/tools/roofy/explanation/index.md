@@ -37,5 +37,4 @@ CityParquet data can also be added by selecting its folder through the Add layer
 ## Understanding Layers
 
 Data added to Roofy is organized into layers. A layer represents a dataset loaded into the application and does not necessarily represent a single building. One layer can contain multiple buildings or other geographic features.
-
 Additional datasets can be added as separate layers using Add layer.

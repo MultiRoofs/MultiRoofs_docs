@@ -3,11 +3,13 @@ A step-by-step guide for viewing, analysing, classifying and exporting
 3D building and rooftop data
 # 1. Introduction to Roofy
 
-[Roofy](https://urbis.open3d.city/)  is an interactive web application for visualizing, exploring, and analyzing 3D city and building data, with a particular focus on buildings and their roof surfaces. It allows users to load supported 3D and geospatial datasets, display buildings on an interactive 3D map, select individual buildings or surfaces, and inspect their associated properties and attributes. Roofy also provides tools for classifying and coloring roof surfaces according to predefined or user-defined rules, such as roof slope, orientation, area, and solar suitability. One of the main advantages of Roofy is that it combines the 3D geometry of a building with its associated attribute information in the same interface. This allows users to visually examine a roof surface while simultaneously accessing numerical information such as its area, slope, and orientation. The resulting data can also be filtered, analyzed, and exported in different formats for further use.
+[Roofy website](https://urbis.open3d.city/)  is an interactive web application for visualizing, exploring, and analyzing 3D city and building data, with a particular focus on buildings and their roof surfaces. It allows users to load supported 3D and geospatial datasets, display buildings on an interactive 3D map, select individual buildings or surfaces, and inspect their associated properties and attributes. 
+
+Roofy mainly provides tools for classifying and coloring roof surfaces according to predefined or user-defined rules, such as roof slope, orientation, area, and solar suitability. 
 
 ## Roofy Main Page
 
-After opening the [Roofy web application](https://urbis.open3d.city/), the main page is displayed, as shown in the figure 1 below. The interface is organized into several areas that provide access to the main functions of the tool.
+After opening the Roofy web application, the main page is displayed, as shown in the {numref}`fig-roofy-20` . The interface is organized into several areas that provide access to the main functions of the tool.
 
 
 ```{figure} images/roofy_figure_20.png
@@ -24,7 +26,7 @@ Roofy interface.
 
 
 # 2. Upload your data 
-To start working with your own data in Roofy, the dataset must first be added to the workspace. Click the Add layer button located in the Layers panel on the left side of the main interface. The Add layer window will then open, as shown in the figure below.
+To start working with your own data in Roofy, the dataset must first be added to the workspace. Click the **Add layer** button located in the Layers panel on the left side of the main interface. The Add layer window will then open.
 
 ```{figure} images/roofy_figure_22.png
 :alt: Add layer window for uploading data to Roofy
@@ -35,9 +37,17 @@ To start working with your own data in Roofy, the dataset must first be added to
 Add layer window for uploading data to Roofy.
 ```
 
-The Add layer window provides several methods for adding data: File, URL, Catalog, and Draw. To upload a file dataset stored on your computer, select File. You can either drag and drop the file into the upload area or click **Browse files** to locate it on your computer. Roofy accepts CityJSON (.city.json), CityJSONSeq (.city.jsonl), FlatCityBuf (.fcb), CityGML (.gml), Parquet (.parquet), and GeoJSON (.geojson) files. If the data is stored as a CityParquet folder, click Choose folder instead. After selecting the file, Roofy loads the dataset into the workspace. The uploaded dataset then appears as a new layer in the Layers panel, and its available geographic or 3D content can be displayed in the main viewer.
+The Add layer window provides several methods for adding data: File, URL, Catalog, and Draw. 
 
-Roofy displays the selected file in the lower part of the Add layer window, as shown in the figure below. The file name and the detected file type are displayed so that you can verify that the correct dataset has been selected. In this example, Roofy detects the uploaded `3dbag_b2.modified.city.json` file as CityJSON. Once you have confirmed that the file and detected format are correct, click the **Add layer** button to load the dataset into the Roofy workspace. Roofy will then process the file and display the available buildings and data in the main viewer.
+To upload a file dataset stored on your computer, select File. You can either drag and drop the file into the upload area or click **Browse files** to locate it on your computer. 
+
+```{note}
+Roofy accepts CityJSON (.city.json), CityJSONSeq (.city.jsonl), FlatCityBuf (.fcb), CityGML (.gml), Parquet (.parquet), and GeoJSON (.geojson) files. If the data is stored as a CityParquet folder, click Choose folder instead
+```
+
+After selecting the file, Roofy loads the dataset into the workspace. The uploaded dataset then appears as a new layer in the Layers panel, and its available geographic or 3D content can be displayed in the main viewer.
+
+Roofy displays the selected file in the lower part of the Add layer window, as shown in the {numref}`fig-roofy-23` below. The file name and the detected file type are displayed so that you can verify that the correct dataset has been selected. In this example, Roofy detects the uploaded `3dbag_b2.modified.city.json` file as CityJSON. Once you have confirmed that the file and detected format are correct, click the **Add layer** button to load the dataset into the Roofy workspace. Roofy will then process the file and display the available buildings and data in the main viewer.
 
 ```{figure} images/roofy_figure_23.png
 :alt: Selected CityJSON file ready to be added as a new layer in Roofy
@@ -53,7 +63,7 @@ Selected CityJSON file ready to be added as a new layer in Roofy.
 
 In the example used throughout this guide, Roofy loads a CityJSON model
 containing two buildings at LoD 2.2 Using the example CityJSON dataset
-`3dbag_b2.modified.city.json` shown in the screenshots.
+`3dbag_b2.modified.city.json` shown in the {numref}`fig-roofy-1`.
 
 ```{figure} images/roofy_figure_1.png
 :alt: Roofy after loading a CityJSON model
@@ -75,7 +85,7 @@ After a dataset is loaded, the Roofy interface is divided into several main area
 
 The **center** of the interface contains the interactive 3D map, where the loaded buildings are displayed in their geographic location. The user can navigate around the model, zoom in or out, and select buildings or individual surfaces. A legend is also displayed on the map to explain the colors currently used for the model.
 
-At the **top of the interface**, the Mode control allows the user to choose how elements are selected. For example, Pick feature is used to select a complete feature such as a building, while Pick surface is used to select an individual surface of the 3D model. Other controls, such as Tools, Search, Sun & shade, and Scene settings, provide additional analysis, navigation, and visualization functions. 
+At the **top of the interface**, the Mode control allows the user to choose how elements are selected. 
 
 ```{figure} images/roofy_figure_3.png
 :alt: Roofy workspace showing the Style panel, rule-based roof colours, legend, table, and selected-object information
@@ -86,7 +96,10 @@ At the **top of the interface**, the Mode control allows the user to choose how 
 Roofy workspace with the Style panel, rule-based roof colours, legend, table, and selected-object information visible at the same time.
 ```
 
-Table 1 below describes the workspace for the Roofy website.
+ {numref}`table-roofy-workspace` below describes the workspace for the Roofy website.
+
+```{table} Main areas of the Roofy workspace
+:name: table-roofy-workspace
 
 | Area | Position | Purpose |
 |---|---|---|
@@ -106,17 +119,23 @@ Table 1 below describes the workspace for the Roofy website.
 | Scene settings | Upper right | Opens the Scene settings panel. |
 | Export scene | Upper right | Captures the current view of the 3D scene with map attribution. The current view can be saved as a PNG image or opened in the print view for printing or saving as a PDF. |
 | Export data | Left, inside the selected layer | Opens the data export window for the selected layer. It provides options for choosing which records and attributes to export, the output format, and the available Level of Detail (LoD). |
+```
 
 ## Features and Surfaces
 
-An important concept when using Roofy is the distinction between a feature and a surface.
+An important concept when using Roofy is the distinction between a feature and a surface.  `Pick feature` is used to select a complete feature such as a building, while `Pick surface` is used to select an individual surface of the 3D model. Other controls, such as Tools, Search, Sun & shade, and Scene settings, provide additional analysis, navigation, and visualization functions.
 
-A feature represents a complete object in the dataset, such as a building. The Pick feature mode can therefore be used when the user wants to select and inspect a complete building.
+A feature represents a complete object in the dataset, such as a building. 
+A surface represents an individual part of the 3D geometry. You can choose to select either the Pick Feature or the Pick Surface mode.
 
-A surface represents an individual part of the 3D geometry. For example, a building can contain several roof surfaces with different slopes and orientations. Pick surface allows the user to select one of these individual surfaces and inspect its available information.
+```{figure} images/roofy_feature_pick.png
+:alt: Select the pick feature or the pick surface
+:width: 80%
+:align: center
+:name: roofy_feature_pick
 
-This distinction is particularly important for roof analysis because different surfaces belonging to the same building may have different characteristics.
-
+Select the pick feature or the pick surface
+```
 ## Roof Properties and Attributes
 
 Depending on the loaded dataset and the selected element, Roofy can display geometric properties and other attributes associated with buildings and roof surfaces.
@@ -133,26 +152,57 @@ For a roof surface, the displayed information can include properties such as:
 ## Roof Classification and Visualization
 
 Roofy provides different methods for controlling how the model is visually represented through the Style section.
+The Color by option can display the model using Surface type, Rules, or Single colour. 
 
-The Color by option can display the model using Surface type, Rules, or Single colour.
+```{figure} images/color_by.png
+:alt: Select the pick feature or the pick surface
+:width: 80%
+:align: center
+:name: roofy_coloryby
 
-Surface type uses colors to distinguish semantic surfaces such as roofs, walls, and ground surfaces. Single colour provides a uniform visualization. Rules provide a more analytical form of visualization by assigning colors to roof surfaces according to defined conditions.
+Roofy Color Options for Visualizing and Classifying Roof Surfaces
+```
 
-For example, rules can be created using properties such as area, inclination, and azimuth. This makes it possible to visually identify roof surfaces with particular characteristics.
+**Surface type** uses colors to distinguish semantic surfaces such as roofs, walls, and ground surfaces.
+**Single colour** provides a uniform visualization. **Rules** provide a more analytical form of visualization by assigning colors to roof surfaces according to defined conditions.
+ Rules can be created using properties such as area, inclination, and azimuth. This makes it possible to visually identify roof surfaces with particular characteristics.
 
 ## Analysis Tools
 
 Roofy also contains a Tools panel that provides additional functions for working with the loaded data. The tools visible in the interface include Roof metrics to attributes, Measure solids, Validate solids, Height from extent, Join attributes by location, Aggregate buildings per area, and Distance to nearest.
 
-These tools extend the application beyond visualization by allowing measurements or additional analysis to be performed when required.
+```{figure} images/roofy_tool.png
+:alt: Select the pick feature or the pick surface
+:width: 80%
+:align: center
+:name: roofy_roofy_tool_pick
 
+ The Tools panel
+```
 ## Output and Export
 
 Roofy provides different types of output depending on what the user wants to obtain.
+The layer-level data **export function** is used to export building/model data. The export interface provides options for selecting the records and attributes to include, choosing an output format, and selecting an available Level of Detail (LoD).
 
-The layer-level data export function is used to export building/model data. The export interface provides options for selecting the records and attributes to include, choosing an output format, and selecting an available Level of Detail (LoD).
+```{figure} images/export1.png
+:alt: Select the pick feature or the pick surface
+:width: 80%
+:align: center
+:name: roofy_export1
 
-The Export scene function in the upper-right part of the interface serves a different purpose. It captures the current visual view of the scene. The scene can be saved as a PNG image or opened in the print view for printing or saving as a PDF.
+ Data Export Interface
+```
 
+The **Export scene** function in the upper-right part of the interface serves a different purpose. It captures the current visual view of the scene. The scene can be saved as a PNG image or opened in the print view for printing or saving as a PDF.
+
+
+```{figure} images/export2.png
+:alt: Select the pick feature or the pick surface
+:width: 80%
+:align: center
+:name: roofy_export1
+
+Export scene function
+```
 It is therefore important to distinguish between exporting data and exporting the visual scene: one produces data for further use, while the other captures the current visualization.
 
