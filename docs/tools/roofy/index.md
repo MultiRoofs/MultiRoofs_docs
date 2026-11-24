@@ -5,6 +5,7 @@ Roofy is an interactive web application for visualizing, exploring, and analyzin
 ```{toctree}
 :maxdepth: 2
 
-tutorials/index
 explanation/index
+tutorials/index
+
 ```
