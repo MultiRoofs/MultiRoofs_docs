@@ -1,6 +1,6 @@
 # Background
 
-## What is Roofy?
+## What is [Roofy](https://urbis.open3d.city/)?
 
 Roofy is an interactive web application for visualizing, exploring, and analyzing 3D city and building data, with a particular focus on buildings and their roof surfaces. Roofy works with existing building and geospatial datasets that are loaded into the application.
 
@@ -11,10 +11,9 @@ Roofy provides tools for classifying roof surfaces, inspecting building informat
 The general Roofy workflow consists of loading an existing dataset, exploring it in the 3D viewer, inspecting its information, performing analysis or classification, and exporting the required results.
 
 ## Why Do We Need Roofy?
+Roofy is useful for comparing and classifying roof surfaces. Roofs can be displayed using different colors according to characteristics such as surface type or user-defined rules. Rules can use properties such as roof area, inclination, or azimuth to identify roof surfaces that satisfy particular conditions.
 
 3D city models can contain detailed geometric and attribute information that may be difficult to understand by examining the data file directly. Roofy provides a graphical environment in which this information can be explored visually.
-
-Roofy is useful for comparing and classifying roof surfaces. Roofs can be displayed using different colors according to characteristics such as surface type or user-defined rules. Rules can use properties such as roof area, inclination, or azimuth to identify roof surfaces that satisfy particular conditions.
 
 The tool therefore provides a more accessible way to explore 3D building information without requiring the user to manually inspect the underlying data structure.
 
