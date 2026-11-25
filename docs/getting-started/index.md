@@ -32,7 +32,7 @@ that matches what you need right now.
 |---|---|
 | Local authority or policy officer | [About MultiRoofs](../about-multiroofs/index.md), [Urban challenges](../urban-challenges/index.md), [Rooftops and buildings](../rooftops-and-buildings/index.md), [Owners and incentives](../owners-and-incentives/index.md) |
 | Trainer | [Training path for local authorities](../training-path/index.md) |
-| GIS or data analyst | [Digital twins](../digital-twins/index.md), then the [MultiRoofs Builder tutorials](../tools/CityJSON/tutorials/index.md) |
+| GIS or data analyst | [Digital twins](../digital-twins/index.md), then the [CityJSON Generator tutorials](../tools/CityJSON/tutorials/index.md) |
 | Developer | The **Reference** page of each tool, then [Contributing to these docs](../contributing/index.md) |
 
 Unfamiliar with a term? Check the [Glossary](../glossary/index.md).
@@ -41,7 +41,7 @@ Unfamiliar with a term? Check the [Glossary](../glossary/index.md).
 
 | Tool | What it does | Input | Output | Supports |
 |---|---|---|---|---|
-| [MultiRoofs Builder](../tools/CityJSON/index.md) | Generates 3D building models | LiDAR point cloud, building footprints | CityJSON city model | What rooftops **can** offer |
+| [CityJSON Generator](../tools/CityJSON/index.md) | Generates 3D building models | LiDAR point cloud, building footprints | CityJSON city model | What rooftops **can** offer |
 | [MRIO](../tools/mrio/index.md) | Prepares, validates and enriches 3D building models for MultiRoofs | CityJSON or CityJSONSeq city model, optional CSV with building attributes | MultiRoofs-compliant CityJSON or CityJSONSeq city model | What rooftops **can** offer |
 | [Roofy](../tools/roofy/index.md) | % TODO | % TODO | % TODO | % TODO |
 | [Urban Challenges assessment](../tools/challenge_assessment/index.md) | % TODO | % TODO | % TODO | What the city **needs** |

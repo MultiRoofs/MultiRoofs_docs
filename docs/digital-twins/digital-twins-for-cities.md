@@ -51,7 +51,7 @@ In MultiRoofs, the digital twin is a data- and policy-driven set of tools that h
 
 **Where it sits.** Following the classification in [What is a digital twin?](what-is-a-digital-twin.md), the MultiRoofs digital twin is closest to a **digital model or digital shadow** of the city's roofs: it is updated when new data becomes available, rather than continuously, and it informs people rather than acting on roofs directly. For planning decisions, this is appropriate: the building stock changes slowly, and the value lies in the analysis and the shared picture rather than in real-time control.
 
-The [MultiRoofs Builder](../tools/CityJSON/index.md) supports the first step by generating 3D building models from LiDAR and building footprints. Then, additional attributes can be incorporated to the model by using [MRIO](../tools/mrio/index.md) and the resulting enriched CityJSON can be used to [visualize rooftop potential](../tools/roofy/index.md) and [align priorities](../tools/challenge_assessment/index.md) for its activation.
+The [CityJSON Generator](../tools/CityJSON/index.md) supports the first step by generating 3D building models from LiDAR and building footprints. Then, additional attributes can be incorporated to the model by using [MRIO](../tools/mrio/index.md) and the resulting enriched CityJSON can be used to [visualize rooftop potential](../tools/roofy/index.md) and [align priorities](../tools/challenge_assessment/index.md) for its activation.
 
 ```{figure} ../about-multiroofs/images/mrtools.png
 :alt: A diagram showing the MultiRoofs tools developed in the consortium.

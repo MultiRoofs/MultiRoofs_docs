@@ -19,7 +19,7 @@ The web-based MRIO welcome page.
   folder of the MRIO project.
 
 % TODO: complete the requirements and, if possible, provide a downloadable sample
-% file and CSV file, as in the MultiRoofs Builder tutorials.
+% file and CSV file, as in the CityJSON Generator tutorials.
 
 ## Uploading your data
 

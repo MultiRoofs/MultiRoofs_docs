@@ -22,7 +22,7 @@ Adding or updating a tool? See [Contributing to these docs](contributing/index.m
 ::::{grid} 1 2 2 2
 :gutter: 3
 
-:::{grid-item-card} MultiRoofs Builder
+:::{grid-item-card} CityJSON Generator
 :link: tools/CityJSON/index
 :link-type: doc
 

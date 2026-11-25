@@ -10,7 +10,7 @@ This tutorial explains how to use the CLI-based MRIO, a version of MRIO that run
   folder of the MRIO project.
 
 % TODO: complete the requirements and, if possible, provide a downloadable sample
-% file and CSV file, as in the MultiRoofs Builder tutorials.
+% file and CSV file, as in the CityJSON Generator tutorials.
 
 (mrio-cli-start)=
 ## Starting MRIO

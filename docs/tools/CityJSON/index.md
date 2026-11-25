@@ -1,6 +1,6 @@
-# MultiRoofs Builder
+# CityJSON Generator
 
-**MultiRoofs Builder** is a user guide that describes how to generate a CityJSON file that is 
+**CityJSON Generator** is a user guide that describes how to generate a CityJSON file that is 
 compatible with the tools developed as part of the MultiRoofs project.
 
 | | |

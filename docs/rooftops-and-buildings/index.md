@@ -16,7 +16,7 @@ The assessment of the city's capabilities is considered in steps 4 and 5 of the 
 
 **Step 5. Build a rooftop passport.** For each roof, gather all available city and district data into a rooftop passport. The passport summarises the spatial, technical, organisational and financial conditions of the roof.
 
-The [MultiRoofs Builder](../tools/CityJSON/index.md) supports these steps by generating 3D models of buildings and their roofs from LiDAR data and building footprints.
+The [CityJSON Generator](../tools/CityJSON/index.md) supports these steps by generating 3D models of buildings and their roofs from LiDAR data and building footprints.
 
 ```{toctree}
 :maxdepth: 2
