@@ -1,24 +1,24 @@
-# Roofy Documentaion
+# MultiRoofs tool Documentaion
 A step-by-step guide for viewing, analysing, classifying and exporting
 3D building and rooftop data
-# 1. Introduction to Roofy
+# 1. Introduction to MultiRoofs tool
 
-[Roofy website](https://urbis.open3d.city/)  is an interactive web application for visualizing, exploring, and analyzing 3D city and building data, with a particular focus on buildings and their roof surfaces. It allows users to load supported 3D and geospatial datasets, display buildings on an interactive 3D map, select individual buildings or surfaces, and inspect their associated properties and attributes. 
+[MultiRoofs tool website](https://urbis.open3d.city/)  is an interactive web application for visualizing, exploring, and analyzing 3D city and building data, with a particular focus on buildings and their roof surfaces. It allows users to load supported 3D and geospatial datasets, display buildings on an interactive 3D map, select individual buildings or surfaces, and inspect their associated properties and attributes. 
 
-Roofy mainly provides tools for classifying and coloring roof surfaces according to predefined or user-defined rules, such as roof slope, orientation, area, and solar suitability. 
+MultiRoofs tool mainly provides tools for classifying and coloring roof surfaces according to predefined or user-defined rules, such as roof slope, orientation, area, and solar suitability. 
 
-## Roofy Main Page
+## MultiRoofs tool Main Page
 
-After opening the Roofy web application, the main page is displayed, as shown in the {numref}`fig-roofy-20` . The interface is organized into several areas that provide access to the main functions of the tool.
+After opening the MultiRoofs tool web application, the main page is displayed, as shown in the {numref}`fig-roofy-20` . The interface is organized into several areas that provide access to the main functions of the tool.
 
 
 ```{figure} images/roofy_figure_20.png
-:alt: Roofy interface
+:alt: MultiRoofs tool interface
 :width: 80%
 :align: center
 :name: fig-roofy-20
 
-Roofy interface.
+MultiRoofs tool interface.
 ```
 
  **On the left side**, the Add layer button  is used to loaded the datasets  into the workspace. After you upload your file, it is used to visualize the buildings and roof surfaces from the loaded dataset.  
@@ -26,15 +26,15 @@ Roofy interface.
 
 
 # 2. Upload your data 
-To start working with your own data in Roofy, the dataset must first be added to the workspace. Click the **Add layer** button located in the Layers panel on the left side of the main interface. The Add layer window will then open.
+To start working with your own data in MultiRoofs tool, the dataset must first be added to the workspace. Click the **Add layer** button located in the Layers panel on the left side of the main interface. The Add layer window will then open.
 
 ```{figure} images/roofy_figure_22.png
-:alt: Add layer window for uploading data to Roofy
+:alt: Add layer window for uploading data to MultiRoofs tool
 :width: 80%
 :align: center
 :name: fig-roofy-22
 
-Add layer window for uploading data to Roofy.
+Add layer window for uploading data to MultiRoofs tool.
 ```
 
 The Add layer window provides several methods for adding data: File, URL, Catalog, and Draw. 
@@ -42,36 +42,36 @@ The Add layer window provides several methods for adding data: File, URL, Catalo
 To upload a file dataset stored on your computer, select File. You can either drag and drop the file into the upload area or click **Browse files** to locate it on your computer. 
 
 ```{note}
-Roofy accepts CityJSON (.city.json), CityJSONSeq (.city.jsonl), FlatCityBuf (.fcb), CityGML (.gml), Parquet (.parquet), and GeoJSON (.geojson) files. If the data is stored as a CityParquet folder, click Choose folder instead
+MultiRoofs tool accepts CityJSON (.city.json), CityJSONSeq (.city.jsonl), FlatCityBuf (.fcb), CityGML (.gml), Parquet (.parquet), and GeoJSON (.geojson) files. If the data is stored as a CityParquet folder, click Choose folder instead
 ```
 
-After selecting the file, Roofy loads the dataset into the workspace. The uploaded dataset then appears as a new layer in the Layers panel, and its available geographic or 3D content can be displayed in the main viewer.
+After selecting the file, MultiRoofs tool loads the dataset into the workspace. The uploaded dataset then appears as a new layer in the Layers panel, and its available geographic or 3D content can be displayed in the main viewer.
 
-Roofy displays the selected file in the lower part of the Add layer window, as shown in the {numref}`fig-roofy-23` below. The file name and the detected file type are displayed so that you can verify that the correct dataset has been selected. In this example, Roofy detects the uploaded `3dbag_b2.modified.city.json` file as CityJSON. Once you have confirmed that the file and detected format are correct, click the **Add layer** button to load the dataset into the Roofy workspace. Roofy will then process the file and display the available buildings and data in the main viewer.
+MultiRoofs tool displays the selected file in the lower part of the Add layer window, as shown in the {numref}`fig-roofy-23` below. The file name and the detected file type are displayed so that you can verify that the correct dataset has been selected. In this example, MultiRoofs tool detects the uploaded `3dbag_b2.modified.city.json` file as CityJSON. Once you have confirmed that the file and detected format are correct, click the **Add layer** button to load the dataset into the MultiRoofs tool workspace. MultiRoofs tool will then process the file and display the available buildings and data in the main viewer.
 
 ```{figure} images/roofy_figure_23.png
-:alt: Selected CityJSON file ready to be added as a new layer in Roofy
+:alt: Selected CityJSON file ready to be added as a new layer in MultiRoofs tool
 :width: 80%
 :align: center
 :name: fig-roofy-23
 
-Selected CityJSON file ready to be added as a new layer in Roofy.
+Selected CityJSON file ready to be added as a new layer in MultiRoofs tool.
 ```
 
 
-# 4. Understanding the Roofy workspace
+# 4. Understanding the MultiRoofs tool workspace
 
-In the example used throughout this guide, Roofy loads a CityJSON model
+In the example used throughout this guide, MultiRoofs tool loads a CityJSON model
 containing two buildings at LoD 2.2 Using the example CityJSON dataset
 `3dbag_b2.modified.city.json` shown in the {numref}`fig-roofy-1`.
 
 ```{figure} images/roofy_figure_1.png
-:alt: Roofy after loading a CityJSON model
+:alt: MultiRoofs tool after loading a CityJSON model
 :width: 80%
 :align: center
 :name: fig-roofy-1
 
-Roofy after loading a CityJSON model: the layer is listed on the left and the two LoD 2.2 buildings are displayed on the 3D map.
+MultiRoofs tool after loading a CityJSON model: the layer is listed on the left and the two LoD 2.2 buildings are displayed on the 3D map.
 ```
 
 After a model is loaded, the workspace is divided into a layer panel on
@@ -79,31 +79,31 @@ the left and a 3D map in the centre. Depending on the action being
 performed, additional information can appear as a legend, a table below
 the map, or a property panel on the right.
 
-### Main Areas of the Roofy Interface
+## Main Areas of the MultiRoofs tool Interface
 
-After a dataset is loaded, the Roofy interface is divided into several main areas. **The left side** is mainly used to manage and configure the loaded layers. It provides access to functions such as Zoom to layer, Open table, Export, Style, Filter, and Details.  The Details section provides information about the loaded dataset, such as its source, format, and coordinate reference system (CRS).
+After a dataset is loaded, the MultiRoofs tool interface is divided into several main areas. **The left side** is mainly used to manage and configure the loaded layers. It provides access to functions such as Zoom to layer, Open table, Export, Style, Filter, and Details.  The Details section provides information about the loaded dataset, such as its source, format, and coordinate reference system (CRS).
 
 The **center** of the interface contains the interactive 3D map, where the loaded buildings are displayed in their geographic location. The user can navigate around the model, zoom in or out, and select buildings or individual surfaces. A legend is also displayed on the map to explain the colors currently used for the model.
 
 At the **top of the interface**, the Mode control allows the user to choose how elements are selected. 
 
 ```{figure} images/roofy_figure_3.png
-:alt: Roofy workspace showing the Style panel, rule-based roof colours, legend, table, and selected-object information
+:alt: MultiRoofs tool workspace showing the Style panel, rule-based roof colours, legend, table, and selected-object information
 :width: 80%
 :align: center
 :name: fig-roofy-3
 
-Roofy workspace with the Style panel, rule-based roof colours, legend, table, and selected-object information visible at the same time.
+MultiRoofs tool workspace with the Style panel, rule-based roof colours, legend, table, and selected-object information visible at the same time.
 ```
 
- {numref}`table-roofy-workspace` below describes the workspace for the Roofy website.
+ {numref}`table-roofy-workspace` below describes the workspace for the MultiRoofs tool website.
 
-```{table} Main areas of the Roofy workspace
+```{table} Main areas of the MultiRoofs tool workspace
 :name: table-roofy-workspace
 
 | Area | Position | Purpose |
 |---|---|---|
-| Layers panel | Left | Displays the datasets that have been added to Roofy. After selecting a layer, the user can access functions such as Zoom to layer, Open table, Export, Style, Filter, and Details. |
+| Layers panel | Left | Displays the datasets that have been added to MultiRoofs tool. After selecting a layer, the user can access functions such as Zoom to layer, Open table, Export, Style, Filter, and Details. |
 | Add layer | Upper left | Opens the Add layer window. The window provides the File, URL, Catalog, and Draw options for adding data. |
 | Style | Left, inside the selected layer | Controls how the loaded model is visually represented. The Color by option provides Surface type, Rules, and Single colour options. |
 | Details | Left, inside the selected layer | Displays additional information about the selected layer. |
@@ -123,7 +123,7 @@ Roofy workspace with the Style panel, rule-based roof colours, legend, table, an
 
 ## Features and Surfaces
 
-An important concept when using Roofy is the distinction between a feature and a surface.  `Pick feature` is used to select a complete feature such as a building, while `Pick surface` is used to select an individual surface of the 3D model. Other controls, such as Tools, Search, Sun & shade, and Scene settings, provide additional analysis, navigation, and visualization functions.
+An important concept when using MultiRoofs tool is the distinction between a feature and a surface.  `Pick feature` is used to select a complete feature such as a building, while `Pick surface` is used to select an individual surface of the 3D model. Other controls, such as Tools, Search, Sun & shade, and Scene settings, provide additional analysis, navigation, and visualization functions.
 
 A feature represents a complete object in the dataset, such as a building. 
 A surface represents an individual part of the 3D geometry. You can choose to select either the Pick Feature or the Pick Surface mode.
@@ -138,7 +138,7 @@ Select the pick feature or the pick surface
 ```
 ## Roof Properties and Attributes
 
-Depending on the loaded dataset and the selected element, Roofy can display geometric properties and other attributes associated with buildings and roof surfaces.
+Depending on the loaded dataset and the selected element, MultiRoofs tool can display geometric properties and other attributes associated with buildings and roof surfaces.
 
 For a roof surface, the displayed information can include properties such as:
 
@@ -151,7 +151,7 @@ For a roof surface, the displayed information can include properties such as:
 
 ## Roof Classification and Visualization
 
-Roofy provides different methods for controlling how the model is visually represented through the Style section.
+MultiRoofs tool provides different methods for controlling how the model is visually represented through the Style section.
 The Color by option can display the model using Surface type, Rules, or Single colour. 
 
 ```{figure} images/color_by.png
@@ -160,7 +160,7 @@ The Color by option can display the model using Surface type, Rules, or Single c
 :align: center
 :name: roofy_coloryby
 
-Roofy Color Options for Visualizing and Classifying Roof Surfaces
+MultiRoofs tool Color Options for Visualizing and Classifying Roof Surfaces
 ```
 
 **Surface type** uses colors to distinguish semantic surfaces such as roofs, walls, and ground surfaces.
@@ -169,7 +169,7 @@ Roofy Color Options for Visualizing and Classifying Roof Surfaces
 
 ## Analysis Tools
 
-Roofy also contains a Tools panel that provides additional functions for working with the loaded data. The tools visible in the interface include Roof metrics to attributes, Measure solids, Validate solids, Height from extent, Join attributes by location, Aggregate buildings per area, and Distance to nearest.
+MultiRoofs tool also contains a Tools panel that provides additional functions for working with the loaded data. The tools visible in the interface include Roof metrics to attributes, Measure solids, Validate solids, Height from extent, Join attributes by location, Aggregate buildings per area, and Distance to nearest.
 
 ```{figure} images/roofy_tool.png
 :alt: Select the pick feature or the pick surface
@@ -181,7 +181,7 @@ Roofy also contains a Tools panel that provides additional functions for working
 ```
 ## Output and Export
 
-Roofy provides different types of output depending on what the user wants to obtain.
+MultiRoofs tool provides different types of output depending on what the user wants to obtain.
 The layer-level data **export function** is used to export building/model data. The export interface provides options for selecting the records and attributes to include, choosing an output format, and selecting an available Level of Detail (LoD).
 
 ```{figure} images/export1.png
@@ -200,7 +200,7 @@ The **Export scene** function in the upper-right part of the interface serves a 
 :alt: Select the pick feature or the pick surface
 :width: 80%
 :align: center
-:name: roofy_export1
+:name: roofy_export11
 
 Export scene function
 ```

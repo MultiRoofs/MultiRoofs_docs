@@ -120,7 +120,7 @@ We recommend to validate the file both before and after preparation to ensure th
 
 Validation dialog
 ```
-
+(attributes-from-CSV)=
 ## Importing attributes from a CSV file
 
 You can use this operation if you have an attribute that you want to add to your 3D model. A CSV file is a table in which each row represents a single CityObject. The first column must contain the exact ID of that CityObject. The remaining columns become new attributes. The ID column is used for matching, not copied as a new attribute. If you have a CSV file containing attributes that you want to add to your file, you need to follow these steps:

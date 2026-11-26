@@ -179,6 +179,7 @@ CityJSON validation results.
 
 The checks include JSON syntax, schema, extensions, parent and child consistency, vertex indices, semantics arrays, textures, materials, extra root properties, duplicate vertices and unused vertices. Investigate any check reported as an error or warning before using the dataset further.
 
+(attributes-cli-CSV)=
 ## Importing attributes from a CSV file
 
 You can use this operation to add attributes to your 3D model from a CSV file. A CSV file is a table in which each row represents a single CityObject. The first column must contain the exact ID of that CityObject. The remaining columns become new attributes. The ID column is used for matching, and is not copied as an attribute.

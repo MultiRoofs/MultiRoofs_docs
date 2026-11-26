@@ -43,7 +43,7 @@ Unfamiliar with a term? Check the [Glossary](../glossary/index.md).
 |---|---|---|---|---|
 | [MultiRoofs Builder](../tools/CityJSON/index.md) | Generates 3D building models | LiDAR point cloud, building footprints | CityJSON city model | What rooftops **can** offer |
 | [MRIO](../tools/mrio/index.md) | Prepares, validates and enriches 3D building models for MultiRoofs | CityJSON or CityJSONSeq city model, optional CSV with building attributes | MultiRoofs-compliant CityJSON or CityJSONSeq city model | What rooftops **can** offer |
-| [Roofy](../tools/roofy/index.md) | % TODO | % TODO | % TODO | % TODO |
+| [MultiRoofs tool](../tools/roofy/index.md) | % TODO | % TODO | % TODO | % TODO |
 | [Urban Challenges assessment](../tools/challenge_assessment/index.md) | % TODO | % TODO | % TODO | What the city **needs** |
 
 % TODO: Add a workflow diagram here, for example

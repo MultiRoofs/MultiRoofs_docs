@@ -269,7 +269,7 @@ A participant from a fictional municipality fills in:
 
 **Key content.** What each tool does and when to use it; how to prepare data; reading and interpreting outputs; understanding their limitations; using results in internal and external discussions.
 
-**Read.** The tutorials and how-to guides of each tool: [MultiRoofs Builder](../tools/CityJSON/index.md), [MRIO](../tools/mrio/index.md), [Roofy](../tools/roofy/index.md),
+**Read.** The tutorials and how-to guides of each tool: [MultiRoofs Builder](../tools/CityJSON/index.md), [MRIO](../tools/mrio/index.md), [MultiRoofs tool](../tools/roofy/index.md),
 [Urban Challenges assessment](../tools/challenge_assessment/index.md).
 
 ```{admonition} Example for audience interactions

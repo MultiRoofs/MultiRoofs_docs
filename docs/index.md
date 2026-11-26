@@ -41,7 +41,7 @@ Inspect, edit, validate and export CityJSON and CityJSONSeq building models, eit
 {bdg-primary}`in-house` {bdg-secondary}`Rust` {bdg-secondary}`WebAssembly`
 :::
 
-:::{grid-item-card} Roofy
+:::{grid-item-card} MultiRoofs tool
 :link: tools/roofy/index
 :link-type: doc
 

@@ -1,6 +1,5 @@
-# General Overview
-
-## 1. Purpose and target audience
+# Tutorial
+## General Overview
 
 The [Strategic Priorities Tool](https://stedelijke-opgaven.pages.dev/) is a web-based tool intended exclusively for local authorities. Its purpose is to map urban challenges within local authorities and ultimately help determine which rooftop functions should be implemented and where.
 
